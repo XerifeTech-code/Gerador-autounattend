@@ -27,6 +27,8 @@ Modo claro e escuro, à sua escolha.
 Três idiomas: português (Brasil), inglês e espanhol. A escolha de idioma e de tema fica salva.
 Crédito “Criado por Xerife Tech” no topo e ícone próprio.
 
+Criado com base no meu arquivo gerado na ferramenta Winhance do criador .memorys tech
+
 Compatibilidade
 Windows 10 e Windows 11, em todas as versões, incluindo a 26H2.
 Versões para 64 bits, 32 bits (x86) e ARM64.
