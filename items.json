@@ -1,0 +1,6796 @@
+{
+ "meta": {
+  "total_lines": 2875,
+  "sys_start": 252,
+  "usr_start": 2376,
+  "marker_sys": 2370,
+  "marker_usr": 2838,
+  "lists": {
+   "power-settings": [
+    1895,
+    1923
+   ],
+   "tasks": [
+    2009,
+    2024
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "script-bloat",
+   "group": "apps-scripts",
+   "scope": "sys",
+   "label": "Remover aplicativos (BloatRemoval)",
+   "ranges": [
+    [
+     266,
+     780
+    ],
+    [
+     1693,
+     1693
+    ]
+   ],
+   "kind": "master",
+   "order": 0
+  },
+  {
+   "id": "script-edge",
+   "group": "apps-scripts",
+   "scope": "sys",
+   "label": "Remover Microsoft Edge (EdgeRemoval)",
+   "ranges": [
+    [
+     782,
+     1356
+    ],
+    [
+     1694,
+     1694
+    ]
+   ],
+   "kind": "master",
+   "order": 1,
+   "risk": "O Edge e o WebView2 sao usados por varios programas. O WebView2 e preservado."
+  },
+  {
+   "id": "script-onedrive",
+   "group": "apps-scripts",
+   "scope": "sys",
+   "label": "Remover OneDrive (OneDriveRemoval)",
+   "ranges": [
+    [
+     1358,
+     1688
+    ],
+    [
+     1695,
+     1695
+    ]
+   ],
+   "kind": "master",
+   "order": 2
+  },
+  {
+   "id": "winhance-installer",
+   "group": "apps-scripts",
+   "scope": "sys",
+   "label": "Criar atalho 'Install Winhance' na area de trabalho",
+   "ranges": [
+    [
+     1730,
+     1814
+    ]
+   ],
+   "kind": "master",
+   "order": 3
+  },
+  {
+   "id": "pkg-microsoft-microsoft3dviewer",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Microsoft3DViewer",
+   "ranges": [
+    [
+     350,
+     350
+    ]
+   ],
+   "kind": "package",
+   "order": 4,
+   "key": "Microsoft.Microsoft3DViewer"
+  },
+  {
+   "id": "pkg-microsoft-mixedreality-portal",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.MixedReality.Portal",
+   "ranges": [
+    [
+     351,
+     351
+    ]
+   ],
+   "kind": "package",
+   "order": 5,
+   "key": "Microsoft.MixedReality.Portal"
+  },
+  {
+   "id": "pkg-microsoft-bingsearch",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.BingSearch",
+   "ranges": [
+    [
+     352,
+     352
+    ]
+   ],
+   "kind": "package",
+   "order": 6,
+   "key": "Microsoft.BingSearch"
+  },
+  {
+   "id": "pkg-microsoft-bingnews",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.BingNews",
+   "ranges": [
+    [
+     353,
+     353
+    ]
+   ],
+   "kind": "package",
+   "order": 7,
+   "key": "Microsoft.BingNews"
+  },
+  {
+   "id": "pkg-microsoft-bingweather",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.BingWeather",
+   "ranges": [
+    [
+     354,
+     354
+    ]
+   ],
+   "kind": "package",
+   "order": 8,
+   "key": "Microsoft.BingWeather"
+  },
+  {
+   "id": "pkg-microsoft-windowscamera",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.WindowsCamera",
+   "ranges": [
+    [
+     355,
+     355
+    ]
+   ],
+   "kind": "package",
+   "order": 9,
+   "key": "Microsoft.WindowsCamera"
+  },
+  {
+   "id": "pkg-clipchamp-clipchamp",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Clipchamp.Clipchamp",
+   "ranges": [
+    [
+     356,
+     356
+    ]
+   ],
+   "kind": "package",
+   "order": 10,
+   "key": "Clipchamp.Clipchamp"
+  },
+  {
+   "id": "pkg-microsoft-windowsalarms",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.WindowsAlarms",
+   "ranges": [
+    [
+     357,
+     357
+    ]
+   ],
+   "kind": "package",
+   "order": 11,
+   "key": "Microsoft.WindowsAlarms"
+  },
+  {
+   "id": "pkg-microsoft-549981c3f5f10",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.549981C3F5F10",
+   "ranges": [
+    [
+     358,
+     358
+    ]
+   ],
+   "kind": "package",
+   "order": 12,
+   "key": "Microsoft.549981C3F5F10"
+  },
+  {
+   "id": "pkg-microsoft-gethelp",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.GetHelp",
+   "ranges": [
+    [
+     359,
+     359
+    ]
+   ],
+   "kind": "package",
+   "order": 13,
+   "key": "Microsoft.GetHelp"
+  },
+  {
+   "id": "pkg-microsoft-windows-devhome",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Windows.DevHome",
+   "ranges": [
+    [
+     360,
+     360
+    ]
+   ],
+   "kind": "package",
+   "order": 14,
+   "key": "Microsoft.Windows.DevHome"
+  },
+  {
+   "id": "pkg-microsoftcorporationii-microsoftfamily",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "MicrosoftCorporationII.MicrosoftFamily",
+   "ranges": [
+    [
+     361,
+     361
+    ]
+   ],
+   "kind": "package",
+   "order": 15,
+   "key": "MicrosoftCorporationII.MicrosoftFamily"
+  },
+  {
+   "id": "pkg-microsoft-windowscommunicationsapps",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "microsoft.windowscommunicationsapps",
+   "ranges": [
+    [
+     362,
+     362
+    ]
+   ],
+   "kind": "package",
+   "order": 16,
+   "key": "microsoft.windowscommunicationsapps"
+  },
+  {
+   "id": "pkg-microsoft-skypeapp",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.SkypeApp",
+   "ranges": [
+    [
+     363,
+     363
+    ]
+   ],
+   "kind": "package",
+   "order": 17,
+   "key": "Microsoft.SkypeApp"
+  },
+  {
+   "id": "pkg-msteams",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "MSTeams",
+   "ranges": [
+    [
+     364,
+     364
+    ]
+   ],
+   "kind": "package",
+   "order": 18,
+   "key": "MSTeams"
+  },
+  {
+   "id": "pkg-microsoft-windowsfeedbackhub",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.WindowsFeedbackHub",
+   "ranges": [
+    [
+     365,
+     365
+    ]
+   ],
+   "kind": "package",
+   "order": 19,
+   "key": "Microsoft.WindowsFeedbackHub"
+  },
+  {
+   "id": "pkg-microsoft-windowsmaps",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.WindowsMaps",
+   "ranges": [
+    [
+     366,
+     366
+    ]
+   ],
+   "kind": "package",
+   "order": 20,
+   "key": "Microsoft.WindowsMaps"
+  },
+  {
+   "id": "pkg-microsoft-microsoftofficehub",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.MicrosoftOfficeHub",
+   "ranges": [
+    [
+     367,
+     367
+    ]
+   ],
+   "kind": "package",
+   "order": 21,
+   "key": "Microsoft.MicrosoftOfficeHub"
+  },
+  {
+   "id": "pkg-microsoft-outlookforwindows",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.OutlookForWindows",
+   "ranges": [
+    [
+     368,
+     368
+    ]
+   ],
+   "kind": "package",
+   "order": 22,
+   "key": "Microsoft.OutlookForWindows"
+  },
+  {
+   "id": "pkg-microsoft-mspaint",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.MSPaint",
+   "ranges": [
+    [
+     369,
+     369
+    ]
+   ],
+   "kind": "package",
+   "order": 23,
+   "key": "Microsoft.MSPaint"
+  },
+  {
+   "id": "pkg-microsoft-windows-photos",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Windows.Photos",
+   "ranges": [
+    [
+     370,
+     370
+    ]
+   ],
+   "kind": "package",
+   "order": 24,
+   "key": "Microsoft.Windows.Photos"
+  },
+  {
+   "id": "pkg-microsoft-people",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.People",
+   "ranges": [
+    [
+     371,
+     371
+    ]
+   ],
+   "kind": "package",
+   "order": 25,
+   "key": "Microsoft.People"
+  },
+  {
+   "id": "pkg-microsoft-powerautomatedesktop",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.PowerAutomateDesktop",
+   "ranges": [
+    [
+     372,
+     372
+    ]
+   ],
+   "kind": "package",
+   "order": 26,
+   "key": "Microsoft.PowerAutomateDesktop"
+  },
+  {
+   "id": "pkg-microsoftcorporationii-quickassist",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "MicrosoftCorporationII.QuickAssist",
+   "ranges": [
+    [
+     373,
+     373
+    ]
+   ],
+   "kind": "package",
+   "order": 27,
+   "key": "MicrosoftCorporationII.QuickAssist"
+  },
+  {
+   "id": "pkg-microsoft-microsoftsolitairecollection",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.MicrosoftSolitaireCollection",
+   "ranges": [
+    [
+     374,
+     374
+    ]
+   ],
+   "kind": "package",
+   "order": 28,
+   "key": "Microsoft.MicrosoftSolitaireCollection"
+  },
+  {
+   "id": "pkg-microsoft-gamingapp",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.GamingApp",
+   "ranges": [
+    [
+     375,
+     375
+    ]
+   ],
+   "kind": "package",
+   "order": 29,
+   "key": "Microsoft.GamingApp"
+  },
+  {
+   "id": "pkg-microsoft-xboxapp",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.XboxApp",
+   "ranges": [
+    [
+     376,
+     376
+    ]
+   ],
+   "kind": "package",
+   "order": 30,
+   "key": "Microsoft.XboxApp"
+  },
+  {
+   "id": "pkg-microsoft-xboxidentityprovider",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.XboxIdentityProvider",
+   "ranges": [
+    [
+     377,
+     377
+    ]
+   ],
+   "kind": "package",
+   "order": 31,
+   "key": "Microsoft.XboxIdentityProvider"
+  },
+  {
+   "id": "pkg-microsoft-xboxgameoverlay",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.XboxGameOverlay",
+   "ranges": [
+    [
+     378,
+     378
+    ]
+   ],
+   "kind": "package",
+   "order": 32,
+   "key": "Microsoft.XboxGameOverlay"
+  },
+  {
+   "id": "pkg-microsoft-xbox-tcui",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Xbox.TCUI",
+   "ranges": [
+    [
+     379,
+     379
+    ]
+   ],
+   "kind": "package",
+   "order": 33,
+   "key": "Microsoft.Xbox.TCUI"
+  },
+  {
+   "id": "pkg-microsoft-xboxgamingoverlay",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.XboxGamingOverlay",
+   "ranges": [
+    [
+     380,
+     380
+    ]
+   ],
+   "kind": "package",
+   "order": 34,
+   "key": "Microsoft.XboxGamingOverlay"
+  },
+  {
+   "id": "pkg-microsoft-windowsstore",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.WindowsStore",
+   "ranges": [
+    [
+     381,
+     381
+    ]
+   ],
+   "kind": "package",
+   "order": 35,
+   "key": "Microsoft.WindowsStore"
+  },
+  {
+   "id": "pkg-microsoft-zunemusic",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.ZuneMusic",
+   "ranges": [
+    [
+     382,
+     382
+    ]
+   ],
+   "kind": "package",
+   "order": 36,
+   "key": "Microsoft.ZuneMusic"
+  },
+  {
+   "id": "pkg-microsoft-zunevideo",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.ZuneVideo",
+   "ranges": [
+    [
+     383,
+     383
+    ]
+   ],
+   "kind": "package",
+   "order": 37,
+   "key": "Microsoft.ZuneVideo"
+  },
+  {
+   "id": "pkg-microsoft-windowssoundrecorder",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.WindowsSoundRecorder",
+   "ranges": [
+    [
+     384,
+     384
+    ]
+   ],
+   "kind": "package",
+   "order": 38,
+   "key": "Microsoft.WindowsSoundRecorder"
+  },
+  {
+   "id": "pkg-microsoft-microsoftstickynotes",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.MicrosoftStickyNotes",
+   "ranges": [
+    [
+     385,
+     385
+    ]
+   ],
+   "kind": "package",
+   "order": 39,
+   "key": "Microsoft.MicrosoftStickyNotes"
+  },
+  {
+   "id": "pkg-microsoft-getstarted",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Getstarted",
+   "ranges": [
+    [
+     386,
+     386
+    ]
+   ],
+   "kind": "package",
+   "order": 40,
+   "key": "Microsoft.Getstarted"
+  },
+  {
+   "id": "pkg-microsoft-todos",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Todos",
+   "ranges": [
+    [
+     387,
+     387
+    ]
+   ],
+   "kind": "package",
+   "order": 41,
+   "key": "Microsoft.Todos"
+  },
+  {
+   "id": "pkg-microsoft-yourphone",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.YourPhone",
+   "ranges": [
+    [
+     388,
+     388
+    ]
+   ],
+   "kind": "package",
+   "order": 42,
+   "key": "Microsoft.YourPhone"
+  },
+  {
+   "id": "pkg-microsoft-copilot",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Copilot",
+   "ranges": [
+    [
+     389,
+     389
+    ]
+   ],
+   "kind": "package",
+   "order": 43,
+   "key": "Microsoft.Copilot"
+  },
+  {
+   "id": "pkg-microsoft-windows-ai-copilot-provider",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Windows.Ai.Copilot.Provider",
+   "ranges": [
+    [
+     390,
+     390
+    ]
+   ],
+   "kind": "package",
+   "order": 44,
+   "key": "Microsoft.Windows.Ai.Copilot.Provider"
+  },
+  {
+   "id": "pkg-microsoft-copilot-8wekyb3d8bbwe",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Copilot_8wekyb3d8bbwe",
+   "ranges": [
+    [
+     391,
+     391
+    ]
+   ],
+   "kind": "package",
+   "order": 45,
+   "key": "Microsoft.Copilot_8wekyb3d8bbwe"
+  },
+  {
+   "id": "pkg-microsoft-office-onenote",
+   "group": "apps-packages",
+   "scope": "sys",
+   "label": "Microsoft.Office.OneNote",
+   "ranges": [
+    [
+     392,
+     392
+    ]
+   ],
+   "kind": "package",
+   "order": 46,
+   "key": "Microsoft.Office.OneNote"
+  },
+  {
+   "id": "cap-microsoft-windows-powershell-ise",
+   "group": "apps-caps",
+   "scope": "sys",
+   "label": "Microsoft.Windows.PowerShell.ISE",
+   "ranges": [
+    [
+     397,
+     397
+    ]
+   ],
+   "kind": "capability",
+   "order": 47,
+   "key": "Microsoft.Windows.PowerShell.ISE"
+  },
+  {
+   "id": "cap-app-support-quickassist",
+   "group": "apps-caps",
+   "scope": "sys",
+   "label": "App.Support.QuickAssist",
+   "ranges": [
+    [
+     398,
+     398
+    ]
+   ],
+   "kind": "capability",
+   "order": 48,
+   "key": "App.Support.QuickAssist"
+  },
+  {
+   "id": "cap-app-stepsrecorder",
+   "group": "apps-caps",
+   "scope": "sys",
+   "label": "App.StepsRecorder",
+   "ranges": [
+    [
+     399,
+     399
+    ]
+   ],
+   "kind": "capability",
+   "order": 49,
+   "key": "App.StepsRecorder"
+  },
+  {
+   "id": "cap-microsoft-windows-wordpad",
+   "group": "apps-caps",
+   "scope": "sys",
+   "label": "Microsoft.Windows.WordPad",
+   "ranges": [
+    [
+     400,
+     400
+    ]
+   ],
+   "kind": "capability",
+   "order": 50,
+   "key": "Microsoft.Windows.WordPad"
+  },
+  {
+   "id": "cap-openssh-server",
+   "group": "apps-caps",
+   "scope": "sys",
+   "label": "OpenSSH.Server",
+   "ranges": [
+    [
+     401,
+     401
+    ]
+   ],
+   "kind": "capability",
+   "order": 51,
+   "key": "OpenSSH.Server"
+  },
+  {
+   "id": "feat-recall",
+   "group": "apps-caps",
+   "scope": "sys",
+   "label": "Recall",
+   "ranges": [
+    [
+     406,
+     406
+    ]
+   ],
+   "kind": "feature",
+   "order": 52,
+   "key": "Recall"
+  },
+  {
+   "id": "special-onenote",
+   "group": "apps-caps",
+   "scope": "sys",
+   "label": "OneNote",
+   "ranges": [
+    [
+     411,
+     411
+    ]
+   ],
+   "kind": "special",
+   "order": 53,
+   "key": "OneNote"
+  },
+  {
+   "id": "power-plan",
+   "group": "power-plan",
+   "scope": "sys",
+   "label": "Criar e ativar o plano de energia 'Winhance Power Plan'",
+   "ranges": [
+    [
+     1821,
+     1948
+    ]
+   ],
+   "kind": "master",
+   "order": 54
+  },
+  {
+   "id": "power-hibernate-off",
+   "group": "power-plan",
+   "scope": "sys",
+   "label": "Desativar a hibernacao (powercfg /hibernate off)",
+   "ranges": [
+    [
+     1856,
+     1858
+    ]
+   ],
+   "kind": "sub",
+   "order": 55
+  },
+  {
+   "id": "pw-1895",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Specifies the period of inactivity before Windows turns off the display",
+   "ranges": [
+    [
+     1895,
+     1895
+    ]
+   ],
+   "kind": "list",
+   "order": 56,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1896",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Specifies the period of inactivity before Windows turns off the hard disk",
+   "ranges": [
+    [
+     1896,
+     1896
+    ]
+   ],
+   "kind": "list",
+   "order": 57,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1897",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Allow or prevent Windows from rotating through multiple wallpaper images",
+   "ranges": [
+    [
+     1897,
+     1897
+    ]
+   ],
+   "kind": "list",
+   "order": 58,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1898",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Balance wireless network performance with battery life by adjusting adapter power usage",
+   "ranges": [
+    [
+     1898,
+     1898
+    ]
+   ],
+   "kind": "list",
+   "order": 59,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1899",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Specifies the period of inactivity before Windows puts the computer to sleep",
+   "ranges": [
+    [
+     1899,
+     1899
+    ]
+   ],
+   "kind": "list",
+   "order": 60,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1900",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Allow scheduled tasks and applications to wake your computer from sleep",
+   "ranges": [
+    [
+     1900,
+     1900
+    ]
+   ],
+   "kind": "list",
+   "order": 61,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1901",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Specifies the period of inactivity before Windows hibernates the computer",
+   "ranges": [
+    [
+     1901,
+     1901
+    ]
+   ],
+   "kind": "list",
+   "order": 62,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1902",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Combines sleep and hibernate by saving your session to disk while staying in low-power mode for faster wake",
+   "ranges": [
+    [
+     1902,
+     1902
+    ]
+   ],
+   "kind": "list",
+   "order": 63,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1903",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Set how long USB hubs wait idle before powering down to save energy",
+   "ranges": [
+    [
+     1903,
+     1903
+    ]
+   ],
+   "kind": "list",
+   "order": 64,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1904",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Allow Windows to power down individual USB ports when devices are idle to save energy",
+   "ranges": [
+    [
+     1904,
+     1904
+    ]
+   ],
+   "kind": "list",
+   "order": 65,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1905",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Control how aggressively USB 3.0 ports enter low-power states when devices are idle",
+   "ranges": [
+    [
+     1905,
+     1905
+    ]
+   ],
+   "kind": "list",
+   "order": 66,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1906",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Choose what happens when you press the physical power button on your computer",
+   "ranges": [
+    [
+     1906,
+     1906
+    ]
+   ],
+   "kind": "list",
+   "order": 67,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1907",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Choose what happens when you press the dedicated sleep button on your keyboard or computer",
+   "ranges": [
+    [
+     1907,
+     1907
+    ]
+   ],
+   "kind": "list",
+   "order": 68,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1908",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Control power savings for PCIe devices like graphics cards, SSDs, and expansion cards",
+   "ranges": [
+    [
+     1908,
+     1908
+    ]
+   ],
+   "kind": "list",
+   "order": 69,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1909",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Set the lowest CPU speed allowed as a percentage of maximum frequency",
+   "ranges": [
+    [
+     1909,
+     1909
+    ]
+   ],
+   "kind": "list",
+   "order": 70,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1910",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Set the highest CPU speed allowed as a percentage of maximum frequency",
+   "ranges": [
+    [
+     1910,
+     1910
+    ]
+   ],
+   "kind": "list",
+   "order": 71,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1911",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Choose whether to slow down the processor first (passive) or speed up fans first (active) when hot",
+   "ranges": [
+    [
+     1911,
+     1911
+    ]
+   ],
+   "kind": "list",
+   "order": 72,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1912",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Control how aggressively your CPU boosts above base frequency for demanding tasks",
+   "ranges": [
+    [
+     1912,
+     1912
+    ]
+   ],
+   "kind": "list",
+   "order": 73,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1913",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Control how quickly CPU ramps up speed when workload increases (for legacy non-HWP processors)",
+   "ranges": [
+    [
+     1913,
+     1913
+    ]
+   ],
+   "kind": "list",
+   "order": 74,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1914",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Control how quickly CPU reduces speed when workload decreases (for legacy non-HWP processors)",
+   "ranges": [
+    [
+     1914,
+     1914
+    ]
+   ],
+   "kind": "list",
+   "order": 75,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1915",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Set the minimum percentage of CPU cores that must remain active and responsive",
+   "ranges": [
+    [
+     1915,
+     1915
+    ]
+   ],
+   "kind": "list",
+   "order": 76,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1916",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Set the maximum percentage of CPU cores allowed to be active (100% for best performance)",
+   "ranges": [
+    [
+     1916,
+     1916
+    ]
+   ],
+   "kind": "list",
+   "order": 77,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1917",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Balance power efficiency and performance for modern CPUs with HWP (0 = max performance, 100 = max efficiency)",
+   "ranges": [
+    [
+     1917,
+     1917
+    ]
+   ],
+   "kind": "list",
+   "order": 78,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1918",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Set CPU usage percentage that triggers speed increase (lower = more responsive, for legacy non-HWP CPUs)",
+   "ranges": [
+    [
+     1918,
+     1918
+    ]
+   ],
+   "kind": "list",
+   "order": 79,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1919",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Set CPU usage percentage that triggers speed reduction (lower = maintains performance longer, for legacy non-HWP CPUs)",
+   "ranges": [
+    [
+     1919,
+     1919
+    ]
+   ],
+   "kind": "list",
+   "order": 80,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1920",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Control whether your PC can sleep while streaming media to other devices on your network",
+   "ranges": [
+    [
+     1920,
+     1920
+    ]
+   ],
+   "kind": "list",
+   "order": 81,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1921",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Prioritize smooth video playback over battery life when watching videos",
+   "ranges": [
+    [
+     1921,
+     1921
+    ]
+   ],
+   "kind": "list",
+   "order": 82,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1922",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Balance video quality and power consumption during video playback",
+   "ranges": [
+    [
+     1922,
+     1922
+    ]
+   ],
+   "kind": "list",
+   "order": 83,
+   "list": "power-settings"
+  },
+  {
+   "id": "pw-1923",
+   "group": "power-settings",
+   "scope": "sys",
+   "label": "Balance AMD laptop performance and battery life with quick power mode selection",
+   "ranges": [
+    [
+     1923,
+     1923
+    ]
+   ],
+   "kind": "list",
+   "order": 84,
+   "list": "power-settings"
+  },
+  {
+   "id": "sys-perf-letappsruninbackground",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Allow apps to receive notifications, update data, and perform tasks even when not actively in use",
+   "ranges": [
+    [
+     1955,
+     1955
+    ]
+   ],
+   "kind": "reg",
+   "order": 85,
+   "reg": "Windows\\AppPrivacy\\LetAppsRunInBackground = 0",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy"
+  },
+  {
+   "id": "sys-perf-disablepagecombining",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Compress unused memory pages to reduce RAM usage. On systems with plenty of RAM (16GB+), disabling can slightly reduce CPU overhead and improve performance",
+   "ranges": [
+    [
+     1956,
+     1956
+    ]
+   ],
+   "kind": "reg",
+   "order": 86,
+   "reg": "Session Manager\\Memory Management\\DisablePageCombining = 0",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management"
+  },
+  {
+   "id": "sys-perf-allowstoragesenseglobal",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Automatically free up disk space by removing temporary files, emptying the recycle bin, and managing downloads",
+   "ranges": [
+    [
+     1957,
+     1957
+    ]
+   ],
+   "kind": "reg",
+   "order": 87,
+   "reg": "Windows\\StorageSense\\AllowStorageSenseGlobal = 0",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\StorageSense"
+  },
+  {
+   "id": "sys-perf-win32priorityseparation",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Configure how Windows allocates CPU time between foreground applications and background services",
+   "ranges": [
+    [
+     1958,
+     1958
+    ]
+   ],
+   "kind": "reg",
+   "order": 88,
+   "reg": "Control\\PriorityControl\\Win32PrioritySeparation = 38",
+   "path": "HKLM:\\System\\CurrentControlSet\\Control\\PriorityControl"
+  },
+  {
+   "id": "sys-perf-systemresponsiveness",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Minimize background task interference by allocating more CPU time to your active game or multimedia application",
+   "ranges": [
+    [
+     1959,
+     1959
+    ]
+   ],
+   "kind": "reg",
+   "order": 89,
+   "reg": "Multimedia\\SystemProfile\\SystemResponsiveness = 10",
+   "path": "HKLM:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Multimedia\\SystemProfile"
+  },
+  {
+   "id": "sys-perf-priority",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Give games higher CPU scheduling priority to dedicate more processor time to your game",
+   "ranges": [
+    [
+     1960,
+     1960
+    ]
+   ],
+   "kind": "reg",
+   "order": 90,
+   "reg": "Tasks\\Games\\Priority = 6",
+   "path": "HKLM:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Multimedia\\SystemProfile\\Tasks\\Games"
+  },
+  {
+   "id": "sys-perf-scheduling-category",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Assign high-priority scheduling category to ensure games receive preferential system resource allocation",
+   "ranges": [
+    [
+     1961,
+     1961
+    ]
+   ],
+   "kind": "reg",
+   "order": 91,
+   "reg": "Tasks\\Games\\Scheduling Category = High",
+   "path": "HKLM:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Multimedia\\SystemProfile\\Tasks\\Games"
+  },
+  {
+   "id": "sys-perf-gpu-priority",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Give games higher GPU scheduling priority to improve graphics performance and frame rates",
+   "ranges": [
+    [
+     1962,
+     1962
+    ]
+   ],
+   "kind": "reg",
+   "order": 92,
+   "reg": "Tasks\\Games\\GPU Priority = 8",
+   "path": "HKLM:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Multimedia\\SystemProfile\\Tasks\\Games"
+  },
+  {
+   "id": "sys-perf-hwschmode",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Let your GPU manage its own memory and scheduling for reduced latency and improved performance",
+   "ranges": [
+    [
+     1963,
+     1963
+    ]
+   ],
+   "kind": "reg",
+   "order": 93,
+   "reg": "Control\\GraphicsDrivers\\HwSchMode = 2",
+   "path": "HKLM:\\System\\CurrentControlSet\\Control\\GraphicsDrivers"
+  },
+  {
+   "id": "sys-perf-enablegr535",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Enable legacy NVIDIA image sharpening filter for enhanced visual clarity. Only works on older NVIDIA drivers; newer drivers should use NVIDIA Control Panel sharpening instead",
+   "ranges": [
+    [
+     1964,
+     1964
+    ]
+   ],
+   "kind": "reg",
+   "order": 94,
+   "reg": "Global\\FTS\\EnableGR535 = 0",
+   "path": "HKLM:\\Software\\NVIDIA Corporation\\Global\\FTS"
+  },
+  {
+   "id": "sys-perf-networkthrottlingindex",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Disable network packet throttling to reduce latency and improve online gaming responsiveness",
+   "ranges": [
+    [
+     1965,
+     1965
+    ]
+   ],
+   "kind": "reg",
+   "order": 95,
+   "reg": "Multimedia\\SystemProfile\\NetworkThrottlingIndex = 10",
+   "path": "HKLM:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Multimedia\\SystemProfile"
+  },
+  {
+   "id": "sys-services-tcpackfrequency",
+   "group": "services",
+   "scope": "sys",
+   "label": "Batch small network packets together before sending to improve efficiency. Disabling reduces latency for real-time online gaming but may slightly increase bandwidth usage",
+   "ranges": [
+    [
+     1966,
+     1966
+    ]
+   ],
+   "kind": "reg",
+   "order": 96,
+   "reg": "Tcpip\\Parameters\\TcpAckFrequency = 2",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters"
+  },
+  {
+   "id": "sys-services-tcpnodelay",
+   "group": "services",
+   "scope": "sys",
+   "label": "Batch small network packets together before sending to improve efficiency. Disabling reduces latency for real-time online gaming but may slightly increase bandwidth usage",
+   "ranges": [
+    [
+     1967,
+     1967
+    ]
+   ],
+   "kind": "reg",
+   "order": 97,
+   "reg": "Tcpip\\Parameters\\TCPNoDelay = 0",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters"
+  },
+  {
+   "id": "sys-perf-allowgamedvr",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Record gameplay clips and take screenshots using the Xbox Game Bar overlay. Disabling reduces CPU/GPU usage and can improve frame rates",
+   "ranges": [
+    [
+     1968,
+     1968
+    ]
+   ],
+   "kind": "reg",
+   "order": 98,
+   "reg": "CurrentVersion\\GameConfigStore\\AllowGameDVR = 0",
+   "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\GameConfigStore"
+  },
+  {
+   "id": "sys-perf-servicespipetimeout",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Reduce the startup timeout for Windows services from 60 to 30 seconds. This can speed up boot time slightly",
+   "ranges": [
+    [
+     1969,
+     1969
+    ]
+   ],
+   "kind": "reg",
+   "order": 99,
+   "reg": "CurrentControlSet\\Control\\ServicesPipeTimeout = 30000",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control"
+  },
+  {
+   "id": "sys-services-start",
+   "group": "services",
+   "scope": "sys",
+   "label": "Preload frequently used applications into RAM for faster launch times. Automatic is recommended for HDDs, Manual or Disabled is preferred for SSDs",
+   "ranges": [
+    [
+     1970,
+     1970
+    ]
+   ],
+   "kind": "reg",
+   "order": 100,
+   "reg": "Services\\SysMain\\Start = 4",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SysMain"
+  },
+  {
+   "id": "sys-perf-enableprefetcher",
+   "group": "perf",
+   "scope": "sys",
+   "label": "Preload frequently used applications and boot files into memory to speed up launches. Generally recommended for HDDs not SSDs",
+   "ranges": [
+    [
+     1971,
+     1971
+    ]
+   ],
+   "kind": "reg",
+   "order": 101,
+   "reg": "Memory Management\\PrefetchParameters\\EnablePrefetcher = 0",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management\\PrefetchParameters"
+  },
+  {
+   "id": "sys-services-start-2",
+   "group": "services",
+   "scope": "sys",
+   "label": "Indexes files and folders for faster search results. Disabling reduces background CPU and disk activity but makes Windows Search slower",
+   "ranges": [
+    [
+     1972,
+     1972
+    ]
+   ],
+   "kind": "reg",
+   "order": 102,
+   "reg": "Services\\WSearch\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\WSearch"
+  },
+  {
+   "id": "sys-services-start-3",
+   "group": "services",
+   "scope": "sys",
+   "label": "Manages print jobs sent to printers. If you don't use a printer, set to Manual or Disabled to free up system resources",
+   "ranges": [
+    [
+     1973,
+     1973
+    ]
+   ],
+   "kind": "reg",
+   "order": 103,
+   "reg": "Services\\Spooler\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Spooler"
+  },
+  {
+   "id": "sys-services-start-4",
+   "group": "services",
+   "scope": "sys",
+   "label": "Sends usage data and diagnostics to Microsoft. Setting to Manual or Disabled reduces background network and CPU usage",
+   "ranges": [
+    [
+     1974,
+     1974
+    ]
+   ],
+   "kind": "reg",
+   "order": 104,
+   "reg": "Services\\DiagTrack\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\DiagTrack"
+  },
+  {
+   "id": "sys-services-start-5",
+   "group": "services",
+   "scope": "sys",
+   "label": "Monitors programs for compatibility issues and suggests fixes. Disabling prevents compatibility prompts and saves minor system resources",
+   "ranges": [
+    [
+     1975,
+     1975
+    ]
+   ],
+   "kind": "reg",
+   "order": 105,
+   "reg": "Services\\PcaSvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\PcaSvc"
+  },
+  {
+   "id": "sys-services-start-6",
+   "group": "services",
+   "scope": "sys",
+   "label": "Collects and sends crash data to Microsoft. Disabling prevents crash reporting, reduces network traffic, and improves privacy with minimal system impact",
+   "ranges": [
+    [
+     1976,
+     1976
+    ]
+   ],
+   "kind": "reg",
+   "order": 106,
+   "reg": "Services\\WerSvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\WerSvc"
+  },
+  {
+   "id": "sys-services-start-7",
+   "group": "services",
+   "scope": "sys",
+   "label": "Tracks your physical location for apps and services. Disabling improves privacy and prevents location tracking, but apps won't be able to use location features",
+   "ranges": [
+    [
+     1977,
+     1977
+    ]
+   ],
+   "kind": "reg",
+   "order": 107,
+   "reg": "Services\\lfsvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\lfsvc"
+  },
+  {
+   "id": "sys-services-start-8",
+   "group": "services",
+   "scope": "sys",
+   "label": "Controls device activity when in retail demo mode. Safe to disable for personal computers as it only serves retail display purposes",
+   "ranges": [
+    [
+     1978,
+     1978
+    ]
+   ],
+   "kind": "reg",
+   "order": 108,
+   "reg": "Services\\RetailDemo\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\RetailDemo"
+  },
+  {
+   "id": "sys-services-start-9",
+   "group": "services",
+   "scope": "sys",
+   "label": "Manages Windows Insider Program features and preview builds. Safe to disable if you're not participating in the Windows Insider Program",
+   "ranges": [
+    [
+     1979,
+     1979
+    ]
+   ],
+   "kind": "reg",
+   "order": 109,
+   "reg": "Services\\wisvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\wisvc"
+  },
+  {
+   "id": "sys-services-start-10",
+   "group": "services",
+   "scope": "sys",
+   "label": "Manages telephony state on the device. Safe to disable if you don't use phone connectivity features or make calls from your PC",
+   "ranges": [
+    [
+     1980,
+     1980
+    ]
+   ],
+   "kind": "reg",
+   "order": 110,
+   "reg": "Services\\PhoneSvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\PhoneSvc"
+  },
+  {
+   "id": "sys-services-start-11",
+   "group": "services",
+   "scope": "sys",
+   "label": "Provides wallet functionality for payment and NFC scenarios. Safe to disable if you don't use Microsoft Wallet features",
+   "ranges": [
+    [
+     1981,
+     1981
+    ]
+   ],
+   "kind": "reg",
+   "order": 111,
+   "reg": "Services\\WalletService\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\WalletService"
+  },
+  {
+   "id": "sys-services-start-12",
+   "group": "services",
+   "scope": "sys",
+   "label": "Enables smart card reader functionality for security authentication. Safe to disable if you don't use physical smart cards or card readers",
+   "ranges": [
+    [
+     1982,
+     1982
+    ]
+   ],
+   "kind": "reg",
+   "order": 112,
+   "reg": "Services\\SCardSvr\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SCardSvr"
+  },
+  {
+   "id": "sys-services-start-13",
+   "group": "services",
+   "scope": "sys",
+   "label": "Enables smart card reader functionality for security authentication. Safe to disable if you don't use physical smart cards or card readers",
+   "ranges": [
+    [
+     1983,
+     1983
+    ]
+   ],
+   "kind": "reg",
+   "order": 113,
+   "reg": "Services\\ScDeviceEnum\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\ScDeviceEnum"
+  },
+  {
+   "id": "sys-services-start-14",
+   "group": "services",
+   "scope": "sys",
+   "label": "Enables smart card reader functionality for security authentication. Safe to disable if you don't use physical smart cards or card readers",
+   "ranges": [
+    [
+     1984,
+     1984
+    ]
+   ],
+   "kind": "reg",
+   "order": 114,
+   "reg": "Services\\SCPolicySvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SCPolicySvc"
+  },
+  {
+   "id": "sys-services-start-15",
+   "group": "services",
+   "scope": "sys",
+   "label": "Provides access to downloaded maps for applications. Set to Manual to allow map access when needed while preventing unnecessary background activity",
+   "ranges": [
+    [
+     1985,
+     1985
+    ]
+   ],
+   "kind": "reg",
+   "order": 115,
+   "reg": "Services\\MapsBroker\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\MapsBroker"
+  },
+  {
+   "id": "sys-services-start-16",
+   "group": "services",
+   "scope": "sys",
+   "label": "Enables sending and receiving faxes. Safe to disable for most users as fax functionality is rarely used on modern systems",
+   "ranges": [
+    [
+     1986,
+     1986
+    ]
+   ],
+   "kind": "reg",
+   "order": 116,
+   "reg": "Services\\Fax\\Start = 4",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Fax"
+  },
+  {
+   "id": "sys-services-start-17",
+   "group": "services",
+   "scope": "sys",
+   "label": "Shares Windows Media Player libraries to other networked players and media devices. Safe to disable if you don't share media over your network",
+   "ranges": [
+    [
+     1987,
+     1987
+    ]
+   ],
+   "kind": "reg",
+   "order": 117,
+   "reg": "Services\\WMPNetworkSvc\\Start = 4",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\WMPNetworkSvc"
+  },
+  {
+   "id": "sys-services-start-18",
+   "group": "services",
+   "scope": "sys",
+   "label": "Runs OpenXR applications on Windows Mixed Reality devices. Safe to disable if you don't use VR or AR headsets",
+   "ranges": [
+    [
+     1988,
+     1988
+    ]
+   ],
+   "kind": "reg",
+   "order": 118,
+   "reg": "Services\\MixedRealityOpenXRSvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\MixedRealityOpenXRSvc"
+  },
+  {
+   "id": "sys-services-start-19",
+   "group": "services",
+   "scope": "sys",
+   "label": "Provides ability to share internet connection with other devices. Set to Manual to keep functionality available while preventing unnecessary background activity",
+   "ranges": [
+    [
+     1989,
+     1989
+    ]
+   ],
+   "kind": "reg",
+   "order": 119,
+   "reg": "Services\\icssvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\icssvc"
+  },
+  {
+   "id": "sys-services-start-20",
+   "group": "services",
+   "scope": "sys",
+   "label": "Routes SMS messages according to rules. Safe to disable if you don't use SMS features on your PC",
+   "ranges": [
+    [
+     1990,
+     1990
+    ]
+   ],
+   "kind": "reg",
+   "order": 120,
+   "reg": "Services\\SmsRouter\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SmsRouter"
+  },
+  {
+   "id": "sys-services-start-21",
+   "group": "services",
+   "scope": "sys",
+   "label": "Enables parental controls and family safety features. Safe to disable if you don't use parental control features",
+   "ranges": [
+    [
+     1991,
+     1991
+    ]
+   ],
+   "kind": "reg",
+   "order": 121,
+   "reg": "Services\\WpcMonSvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\WpcMonSvc"
+  },
+  {
+   "id": "sys-services-start-22",
+   "group": "services",
+   "scope": "sys",
+   "label": "Manages payments and Near Field Communication secure elements. Safe to disable if you don't use NFC payment features",
+   "ranges": [
+    [
+     1992,
+     1992
+    ]
+   ],
+   "kind": "reg",
+   "order": 122,
+   "reg": "Services\\SEMgrSvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SEMgrSvc"
+  },
+  {
+   "id": "sys-services-start-23",
+   "group": "services",
+   "scope": "sys",
+   "label": "Verifies potential file system corruptions. Set to Manual to allow verification when needed while reducing background activity",
+   "ranges": [
+    [
+     1993,
+     1993
+    ]
+   ],
+   "kind": "reg",
+   "order": 123,
+   "reg": "Services\\svsvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\svsvc"
+  },
+  {
+   "id": "sys-services-start-24",
+   "group": "services",
+   "scope": "sys",
+   "label": "Manages VPN and dial-up connections. Set to Manual to reduce background activity while keeping VPN functionality available when needed.",
+   "ranges": [
+    [
+     1994,
+     1994
+    ]
+   ],
+   "kind": "reg",
+   "order": 124,
+   "reg": "Services\\RasMan\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\RasMan"
+  },
+  {
+   "id": "sys-services-start-25",
+   "group": "services",
+   "scope": "sys",
+   "label": "Automatically connects to remote networks when programs reference remote resources. Safe to disable if you don't use auto-connect VPN features",
+   "ranges": [
+    [
+     1995,
+     1995
+    ]
+   ],
+   "kind": "reg",
+   "order": 125,
+   "reg": "Services\\RasAuto\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\RasAuto"
+  },
+  {
+   "id": "sys-services-start-26",
+   "group": "services",
+   "scope": "sys",
+   "label": "Allows users to connect interactively to a remote computer. Set to Manual to reduce background activity while keeping Remote Desktop available.",
+   "ranges": [
+    [
+     1996,
+     1996
+    ]
+   ],
+   "kind": "reg",
+   "order": 126,
+   "reg": "Services\\TermService\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\TermService"
+  },
+  {
+   "id": "sys-services-start-27",
+   "group": "services",
+   "scope": "sys",
+   "label": "Manages Remote Desktop Services and Remote Desktop related configurations. Set to Manual to reduce background activity while keeping Remote Desktop available",
+   "ranges": [
+    [
+     1997,
+     1997
+    ]
+   ],
+   "kind": "reg",
+   "order": 127,
+   "reg": "Services\\SessionEnv\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SessionEnv"
+  },
+  {
+   "id": "sys-services-start-28",
+   "group": "services",
+   "scope": "sys",
+   "label": "Allows local device redirection for Remote Desktop connections. Safe to disable if you don't need to share local devices during Remote Desktop sessions",
+   "ranges": [
+    [
+     1998,
+     1998
+    ]
+   ],
+   "kind": "reg",
+   "order": 128,
+   "reg": "Services\\UmRdpService\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\UmRdpService"
+  },
+  {
+   "id": "sys-services-start-29",
+   "group": "services",
+   "scope": "sys",
+   "label": "Transfers Windows Updates and downloads in the background. Setting to Manual allows updates to work while preventing constant background activity during gaming",
+   "ranges": [
+    [
+     1999,
+     1999
+    ]
+   ],
+   "kind": "reg",
+   "order": 129,
+   "reg": "Services\\BITS\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\BITS"
+  },
+  {
+   "id": "sys-services-start-30",
+   "group": "services",
+   "scope": "sys",
+   "label": "Provides authentication and authorization services for Xbox Live. Safe to disable if you don't use Xbox Game Pass, Microsoft Store games, or Xbox features",
+   "ranges": [
+    [
+     2000,
+     2000
+    ]
+   ],
+   "kind": "reg",
+   "order": 130,
+   "reg": "Services\\XblAuthManager\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\XblAuthManager"
+  },
+  {
+   "id": "sys-services-start-31",
+   "group": "services",
+   "scope": "sys",
+   "label": "Syncs game saves to Xbox Live cloud. Only needed for Xbox Game Pass and Microsoft Store games with cloud save features",
+   "ranges": [
+    [
+     2001,
+     2001
+    ]
+   ],
+   "kind": "reg",
+   "order": 131,
+   "reg": "Services\\XblGameSave\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\XblGameSave"
+  },
+  {
+   "id": "sys-services-start-32",
+   "group": "services",
+   "scope": "sys",
+   "label": "Supports Xbox Live multiplayer networking. Required for Xbox multiplayer gaming but not needed for Steam/Epic/other gaming platforms",
+   "ranges": [
+    [
+     2002,
+     2002
+    ]
+   ],
+   "kind": "reg",
+   "order": 132,
+   "reg": "Services\\XboxNetApiSvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\XboxNetApiSvc"
+  },
+  {
+   "id": "sys-services-start-33",
+   "group": "services",
+   "scope": "sys",
+   "label": "Enables fingerprint and facial recognition login via Windows Hello. Safe to disable on desktop systems without biometric hardware",
+   "ranges": [
+    [
+     2003,
+     2003
+    ]
+   ],
+   "kind": "reg",
+   "order": 133,
+   "reg": "Services\\WbioSrvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\WbioSrvc"
+  },
+  {
+   "id": "sys-services-start-34",
+   "group": "services",
+   "scope": "sys",
+   "label": "Enables touch keyboard and pen input functionality. Safe to disable on desktop systems without touchscreen or stylus",
+   "ranges": [
+    [
+     2004,
+     2004
+    ]
+   ],
+   "kind": "reg",
+   "order": 134,
+   "reg": "Services\\TabletInputService\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\TabletInputService"
+  },
+  {
+   "id": "sys-services-start-35",
+   "group": "services",
+   "scope": "sys",
+   "label": "Monitors various sensors like ambient light and orientation. Safe to disable on desktop systems without sensor hardware",
+   "ranges": [
+    [
+     2005,
+     2005
+    ]
+   ],
+   "kind": "reg",
+   "order": 135,
+   "reg": "Services\\SensrSvc\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SensrSvc"
+  },
+  {
+   "id": "sys-services-start-36",
+   "group": "services",
+   "scope": "sys",
+   "label": "Delivers data from a variety of sensors to applications. Safe to disable on desktop systems without sensor hardware",
+   "ranges": [
+    [
+     2006,
+     2006
+    ]
+   ],
+   "kind": "reg",
+   "order": 136,
+   "reg": "Services\\SensorDataService\\Start = 3",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SensorDataService"
+  },
+  {
+   "id": "sys-notif-disablenotifications",
+   "group": "notif",
+   "scope": "sys",
+   "label": "Show all notifications from Windows Security about threats, scans, and protection status",
+   "ranges": [
+    [
+     2049,
+     2049
+    ]
+   ],
+   "kind": "reg",
+   "order": 137,
+   "reg": "Windows Defender Security Center\\Notifications\\DisableNotifications = 0",
+   "path": "HKLM:\\Software\\Microsoft\\Windows Defender Security Center\\Notifications"
+  },
+  {
+   "id": "sys-notif-disablenotifications-2",
+   "group": "notif",
+   "scope": "sys",
+   "label": "Show all notifications from Windows Security about threats, scans, and protection status",
+   "ranges": [
+    [
+     2050,
+     2050
+    ]
+   ],
+   "kind": "reg",
+   "order": 138,
+   "reg": "Windows Defender Security Center\\Notifications\\DisableNotifications = 0",
+   "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows Defender Security Center\\Notifications"
+  },
+  {
+   "id": "sys-notif-disableenhancednotifications",
+   "group": "notif",
+   "scope": "sys",
+   "label": "Show all notifications from Windows Security about threats, scans, and protection status",
+   "ranges": [
+    [
+     2051,
+     2051
+    ]
+   ],
+   "kind": "reg",
+   "order": 139,
+   "reg": "Windows Defender Security Center\\Notifications\\DisableEnhancedNotifications = 0",
+   "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows Defender Security Center\\Notifications"
+  },
+  {
+   "id": "sys-powerreg-hiberbootenabled",
+   "group": "powerreg",
+   "scope": "sys",
+   "label": "Hibernate system state during shutdown for faster boot times (does not affect restart)",
+   "ranges": [
+    [
+     2057,
+     2057
+    ]
+   ],
+   "kind": "reg",
+   "order": 140,
+   "reg": "Session Manager\\Power\\HiberbootEnabled = 0",
+   "path": "HKLM:\\SYSTEM\\ControlSet001\\Control\\Session Manager\\Power"
+  },
+  {
+   "id": "sys-powerreg-showhibernateoption",
+   "group": "powerreg",
+   "scope": "sys",
+   "label": "Display the Hibernate option in the Start Menu power button menu",
+   "ranges": [
+    [
+     2058,
+     2058
+    ]
+   ],
+   "kind": "reg",
+   "order": 141,
+   "reg": "Explorer\\FlyoutMenuSettings\\ShowHibernateOption = 0",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FlyoutMenuSettings"
+  },
+  {
+   "id": "sys-powerreg-powerthrottlingoff",
+   "group": "powerreg",
+   "scope": "sys",
+   "label": "Automatically reduces CPU performance for background processes to improve battery life and reduce heat generation",
+   "ranges": [
+    [
+     2059,
+     2059
+    ]
+   ],
+   "kind": "reg",
+   "order": 142,
+   "reg": "Power\\PowerThrottling\\PowerThrottlingOff = 1",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Power\\PowerThrottling"
+  },
+  {
+   "id": "sys-powerreg-showlockoption",
+   "group": "powerreg",
+   "scope": "sys",
+   "label": "Display the Lock option in the Start Menu power button menu",
+   "ranges": [
+    [
+     2060,
+     2060
+    ]
+   ],
+   "kind": "reg",
+   "order": 143,
+   "reg": "Explorer\\FlyoutMenuSettings\\ShowLockOption = 0",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FlyoutMenuSettings"
+  },
+  {
+   "id": "sys-powerreg-showsleepoption",
+   "group": "powerreg",
+   "scope": "sys",
+   "label": "Display the Sleep option in the Start Menu power button menu",
+   "ranges": [
+    [
+     2061,
+     2061
+    ]
+   ],
+   "kind": "reg",
+   "order": 144,
+   "reg": "Explorer\\FlyoutMenuSettings\\ShowSleepOption = 0",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FlyoutMenuSettings"
+  },
+  {
+   "id": "sys-privacy-consentpromptbehavioradmin",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Controls UAC notification level and secure desktop behavior",
+   "ranges": [
+    [
+     2067,
+     2067
+    ]
+   ],
+   "kind": "reg",
+   "order": 145,
+   "reg": "Policies\\System\\ConsentPromptBehaviorAdmin = 0",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+  },
+  {
+   "id": "sys-privacy-promptonsecuredesktop",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Controls UAC notification level and secure desktop behavior",
+   "ranges": [
+    [
+     2068,
+     2068
+    ]
+   ],
+   "kind": "reg",
+   "order": 146,
+   "reg": "Policies\\System\\PromptOnSecureDesktop = 0",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+  },
+  {
+   "id": "sys-privacy-blockaadworkplacejoin",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Blocks the 'Allow my organization to manage my device' and 'No, sign in to this app only' pop-up messages",
+   "ranges": [
+    [
+     2069,
+     2069
+    ]
+   ],
+   "kind": "reg",
+   "order": 147,
+   "reg": "Windows\\WorkplaceJoin\\BlockAADWorkplaceJoin = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WorkplaceJoin"
+  },
+  {
+   "id": "sys-privacy-preventdeviceencryption",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Prevents Windows from automatically encrypting your device with BitLocker without user consent",
+   "ranges": [
+    [
+     2070,
+     2070
+    ]
+   ],
+   "kind": "reg",
+   "order": 148,
+   "reg": "Control\\BitLocker\\PreventDeviceEncryption = 1",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\BitLocker"
+  },
+  {
+   "id": "sys-privacy-value",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Prevents sharing WiFi passwords with contacts and automatically connecting to suggested open hotspots",
+   "ranges": [
+    [
+     2071,
+     2071
+    ]
+   ],
+   "kind": "reg",
+   "order": 149,
+   "reg": "WiFi\\AllowWiFiHotSpotReporting\\Value = 0",
+   "path": "HKLM:\\Software\\Microsoft\\PolicyManager\\default\\WiFi\\AllowWiFiHotSpotReporting"
+  },
+  {
+   "id": "sys-privacy-value-2",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Prevents sharing WiFi passwords with contacts and automatically connecting to suggested open hotspots",
+   "ranges": [
+    [
+     2072,
+     2072
+    ]
+   ],
+   "kind": "reg",
+   "order": 150,
+   "reg": "WiFi\\AllowAutoConnectToWiFiSenseHotspots\\Value = 0",
+   "path": "HKLM:\\Software\\Microsoft\\PolicyManager\\default\\WiFi\\AllowAutoConnectToWiFiSenseHotspots"
+  },
+  {
+   "id": "sys-privacy-maintenancedisabled",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Prevents Windows from running automatic system maintenance tasks during idle time",
+   "ranges": [
+    [
+     2073,
+     2073
+    ]
+   ],
+   "kind": "reg",
+   "order": 151,
+   "reg": "Schedule\\Maintenance\\MaintenanceDisabled = 1",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\Maintenance"
+  },
+  {
+   "id": "sys-privacy-disabled",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Stops Windows from collecting and sending crash reports and error information to Microsoft",
+   "ranges": [
+    [
+     2074,
+     2074
+    ]
+   ],
+   "kind": "reg",
+   "order": 152,
+   "reg": "Windows\\Windows Error Reporting\\Disabled = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Error Reporting"
+  },
+  {
+   "id": "sys-privacy-fallowtogethelp",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Prevents others from connecting to your computer remotely to provide technical support. Disabling improves security by blocking external remote access",
+   "ranges": [
+    [
+     2075,
+     2075
+    ]
+   ],
+   "kind": "reg",
+   "order": 153,
+   "reg": "Control\\Remote Assistance\\fAllowToGetHelp = 0",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Remote Assistance"
+  },
+  {
+   "id": "sys-privacy-disablelockworkstation",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Allows users to lock their computer using Windows+L, Start menu, or Ctrl+Alt+Del screen",
+   "ranges": [
+    [
+     2076,
+     2076
+    ]
+   ],
+   "kind": "reg",
+   "order": 154,
+   "reg": "CurrentVersion\\Winlogon\\DisableLockWorkstation = 1",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon"
+  },
+  {
+   "id": "sys-privacy-disabledbygrouppolicy",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Windows generates a unique advertising ID that apps use to track your activity and deliver personalized ads based on your behavior across different apps",
+   "ranges": [
+    [
+     2077,
+     2077
+    ]
+   ],
+   "kind": "reg",
+   "order": 155,
+   "reg": "Windows\\AdvertisingInfo\\DisabledByGroupPolicy = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo"
+  },
+  {
+   "id": "sys-privacy-allowinputpersonalization",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Use your voice for apps using Microsoft's online speech recognition technology",
+   "ranges": [
+    [
+     2078,
+     2078
+    ]
+   ],
+   "kind": "reg",
+   "order": 156,
+   "reg": "Microsoft\\InputPersonalization\\AllowInputPersonalization = 0",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\InputPersonalization"
+  },
+  {
+   "id": "sys-privacy-allowtelemetry",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Send diagnostic data to Microsoft to help improve Windows and keep it secure",
+   "ranges": [
+    [
+     2079,
+     2079
+    ]
+   ],
+   "kind": "reg",
+   "order": 157,
+   "reg": "Policies\\DataCollection\\AllowTelemetry = 1",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection"
+  },
+  {
+   "id": "sys-privacy-maxtelemetryallowed",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Send diagnostic data to Microsoft to help improve Windows and keep it secure",
+   "ranges": [
+    [
+     2080,
+     2080
+    ]
+   ],
+   "kind": "reg",
+   "order": 158,
+   "reg": "Policies\\DataCollection\\MaxTelemetryAllowed = 1",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection"
+  },
+  {
+   "id": "sys-privacy-allowtelemetry-2",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Send diagnostic data to Microsoft to help improve Windows and keep it secure",
+   "ranges": [
+    [
+     2081,
+     2081
+    ]
+   ],
+   "kind": "reg",
+   "order": 159,
+   "reg": "Windows\\DataCollection\\AllowTelemetry = 0",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection"
+  },
+  {
+   "id": "sys-privacy-disabletailoredexperienceswithdiagnosticdata",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Let Microsoft use your diagnostic data to show personalized tips, ads and recommendations",
+   "ranges": [
+    [
+     2082,
+     2082
+    ]
+   ],
+   "kind": "reg",
+   "order": 160,
+   "reg": "Windows\\CloudContent\\DisableTailoredExperiencesWithDiagnosticData = 1",
+   "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\CloudContent"
+  },
+  {
+   "id": "sys-privacy-donotshowfeedbacknotifications",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Let Windows ask you to provide feedback on experiences in Windows",
+   "ranges": [
+    [
+     2083,
+     2083
+    ]
+   ],
+   "kind": "reg",
+   "order": 161,
+   "reg": "Windows\\DataCollection\\DoNotShowFeedbackNotifications = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection"
+  },
+  {
+   "id": "sys-privacy-publishuseractivities",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Allows you to jump back into what you were doing with apps, docs, or other activities on startup",
+   "ranges": [
+    [
+     2084,
+     2084
+    ]
+   ],
+   "kind": "reg",
+   "order": 162,
+   "reg": "Windows\\System\\PublishUserActivities = 0",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System"
+  },
+  {
+   "id": "sys-privacy-allowcortana",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Enables Microsoft's Cortana virtual assistant for voice commands and searches",
+   "ranges": [
+    [
+     2085,
+     2085
+    ]
+   ],
+   "kind": "reg",
+   "order": 163,
+   "reg": "Windows\\Windows Search\\AllowCortana = 0",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search"
+  },
+  {
+   "id": "sys-privacy-value-3",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Allows Windows and apps to access your device location for location-based features",
+   "ranges": [
+    [
+     2086,
+     2086
+    ]
+   ],
+   "kind": "reg",
+   "order": 164,
+   "reg": "ConsentStore\\location\\Value = Deny",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\location"
+  },
+  {
+   "id": "sys-privacy-disablelocation",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Allows Windows and apps to access your device location for location-based features",
+   "ranges": [
+    [
+     2087,
+     2087
+    ]
+   ],
+   "kind": "reg",
+   "order": 165,
+   "reg": "Windows\\LocationAndSensors\\DisableLocation = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\LocationAndSensors"
+  },
+  {
+   "id": "sys-privacy-value-4",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Allow apps to have camera access",
+   "ranges": [
+    [
+     2088,
+     2088
+    ]
+   ],
+   "kind": "reg",
+   "order": 166,
+   "reg": "ConsentStore\\webcam\\Value = Allow",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\webcam"
+  },
+  {
+   "id": "sys-privacy-value-5",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Allow apps to have microphone access",
+   "ranges": [
+    [
+     2089,
+     2089
+    ]
+   ],
+   "kind": "reg",
+   "order": 167,
+   "reg": "ConsentStore\\microphone\\Value = Allow",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\microphone"
+  },
+  {
+   "id": "sys-privacy-value-6",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Allow apps to have account info access",
+   "ranges": [
+    [
+     2090,
+     2090
+    ]
+   ],
+   "kind": "reg",
+   "order": 168,
+   "reg": "ConsentStore\\userAccountInformation\\Value = Deny",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\userAccountInformation"
+  },
+  {
+   "id": "sys-privacy-value-7",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Allow apps to have app diagnostic access",
+   "ranges": [
+    [
+     2091,
+     2091
+    ]
+   ],
+   "kind": "reg",
+   "order": 169,
+   "reg": "ConsentStore\\appDiagnostics\\Value = Deny",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\appDiagnostics"
+  },
+  {
+   "id": "sys-privacy-kfmblockoptin",
+   "group": "privacy",
+   "scope": "sys",
+   "label": "Prevents OneDrive from automatically backing up important folders (Documents, Pictures, Desktop, etc.)",
+   "ranges": [
+    [
+     2092,
+     2092
+    ]
+   ],
+   "kind": "reg",
+   "order": 170,
+   "reg": "Microsoft\\OneDrive\\KFMBlockOptIn = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\OneDrive"
+  },
+  {
+   "id": "sys-sound-disablestartupsound",
+   "group": "sound",
+   "scope": "sys",
+   "label": "Play the Windows startup sound when your computer boots up",
+   "ranges": [
+    [
+     2098,
+     2098
+    ]
+   ],
+   "kind": "reg",
+   "order": 171,
+   "reg": "LogonUI\\BootAnimation\\DisableStartupSound = 1",
+   "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Authentication\\LogonUI\\BootAnimation"
+  },
+  {
+   "id": "sys-sound-usersetting-disablestartupsound",
+   "group": "sound",
+   "scope": "sys",
+   "label": "Play the Windows startup sound when your computer boots up",
+   "ranges": [
+    [
+     2099,
+     2099
+    ]
+   ],
+   "kind": "reg",
+   "order": 172,
+   "reg": "CurrentVersion\\EditionOverrides\\UserSetting_DisableStartupSound = 1",
+   "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\EditionOverrides"
+  },
+  {
+   "id": "sys-sound-agentactivationenabled",
+   "group": "sound",
+   "scope": "sys",
+   "label": "Allow apps to listen and respond to voice commands like \"Hey Cortana\"",
+   "ranges": [
+    [
+     2100,
+     2100
+    ]
+   ],
+   "kind": "reg",
+   "order": 173,
+   "reg": "SpeechOneCore\\Settings\\AgentActivationEnabled = 0",
+   "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\SpeechOneCore\\Settings"
+  },
+  {
+   "id": "sys-sound-agentactivationlastused",
+   "group": "sound",
+   "scope": "sys",
+   "label": "Remember and apply the most recently used voice activation configuration",
+   "ranges": [
+    [
+     2101,
+     2101
+    ]
+   ],
+   "kind": "reg",
+   "order": 174,
+   "reg": "SpeechOneCore\\Settings\\AgentActivationLastUsed = 0",
+   "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\SpeechOneCore\\Settings"
+  },
+  {
+   "id": "sys-wupdate-noautoupdate",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2107,
+     2107
+    ]
+   ],
+   "kind": "reg",
+   "order": 175,
+   "reg": "remove NoAutoUpdate",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "sys-wupdate-auoptions",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2108,
+     2108
+    ]
+   ],
+   "kind": "reg",
+   "order": 176,
+   "reg": "WindowsUpdate\\AU\\AUOptions = 2",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "sys-wupdate-branchreadinesslevel",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2109,
+     2109
+    ]
+   ],
+   "kind": "reg",
+   "order": 177,
+   "reg": "UX\\Settings\\BranchReadinessLevel = 20",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-deferfeatureupdates",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2110,
+     2110
+    ]
+   ],
+   "kind": "reg",
+   "order": 178,
+   "reg": "UX\\Settings\\DeferFeatureUpdates = 1",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-deferfeatureupdatesperiodindays",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2111,
+     2111
+    ]
+   ],
+   "kind": "reg",
+   "order": 179,
+   "reg": "UX\\Settings\\DeferFeatureUpdatesPeriodInDays = 365",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-deferqualityupdates",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2112,
+     2112
+    ]
+   ],
+   "kind": "reg",
+   "order": 180,
+   "reg": "UX\\Settings\\DeferQualityUpdates = 1",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-deferqualityupdatesperiodindays",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2113,
+     2113
+    ]
+   ],
+   "kind": "reg",
+   "order": 181,
+   "reg": "UX\\Settings\\DeferQualityUpdatesPeriodInDays = 7",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-pausefeatureupdatesstarttime",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2114,
+     2114
+    ]
+   ],
+   "kind": "reg",
+   "order": 182,
+   "reg": "remove PauseFeatureUpdatesStartTime",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-pausefeatureupdatesendtime",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2115,
+     2115
+    ]
+   ],
+   "kind": "reg",
+   "order": 183,
+   "reg": "remove PauseFeatureUpdatesEndTime",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-pausequalityupdatesstarttime",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2116,
+     2116
+    ]
+   ],
+   "kind": "reg",
+   "order": 184,
+   "reg": "remove PauseQualityUpdatesStartTime",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-pausequalityupdatesendtime",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2117,
+     2117
+    ]
+   ],
+   "kind": "reg",
+   "order": 185,
+   "reg": "remove PauseQualityUpdatesEndTime",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-pauseupdatesstarttime",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2118,
+     2118
+    ]
+   ],
+   "kind": "reg",
+   "order": 186,
+   "reg": "remove PauseUpdatesStartTime",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-pauseupdatesexpirytime",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2119,
+     2119
+    ]
+   ],
+   "kind": "reg",
+   "order": 187,
+   "reg": "remove PauseUpdatesExpiryTime",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-pausedqualitydate",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2120,
+     2120
+    ]
+   ],
+   "kind": "reg",
+   "order": 188,
+   "reg": "remove PausedQualityDate",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-pausedfeaturedate",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2121,
+     2121
+    ]
+   ],
+   "kind": "reg",
+   "order": 189,
+   "reg": "remove PausedFeatureDate",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-flightsettingsmaxpausedays",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2122,
+     2122
+    ]
+   ],
+   "kind": "reg",
+   "order": 190,
+   "reg": "remove FlightSettingsMaxPauseDays",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-noaushutdownoption",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2123,
+     2123
+    ]
+   ],
+   "kind": "reg",
+   "order": 191,
+   "reg": "remove NoAUShutdownOption",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "sys-wupdate-alwaysautorebootatscheduledtime",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2124,
+     2124
+    ]
+   ],
+   "kind": "reg",
+   "order": 192,
+   "reg": "remove AlwaysAutoRebootAtScheduledTime",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "sys-wupdate-autoinstallminorupdates",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2125,
+     2125
+    ]
+   ],
+   "kind": "reg",
+   "order": 193,
+   "reg": "remove AutoInstallMinorUpdates",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "sys-wupdate-usewuserver",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2126,
+     2126
+    ]
+   ],
+   "kind": "reg",
+   "order": 194,
+   "reg": "remove UseWUServer",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "sys-wupdate-pausedfeaturestatus",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2127,
+     2127
+    ]
+   ],
+   "kind": "reg",
+   "order": 195,
+   "reg": "remove PausedFeatureStatus",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-pausedqualitystatus",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2128,
+     2128
+    ]
+   ],
+   "kind": "reg",
+   "order": 196,
+   "reg": "remove PausedQualityStatus",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-dodownloadmode",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Share downloaded updates with other PCs on your network or the internet to reduce bandwidth usage",
+   "ranges": [
+    [
+     2129,
+     2129
+    ]
+   ],
+   "kind": "reg",
+   "order": 197,
+   "reg": "Windows\\DeliveryOptimization\\DODownloadMode = 99",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization"
+  },
+  {
+   "id": "sys-wupdate-iscontinuousinnovationoptedin",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Be among the first to get the latest non-security updates, fixes, and improvements as they roll out",
+   "ranges": [
+    [
+     2130,
+     2130
+    ]
+   ],
+   "kind": "reg",
+   "order": 198,
+   "reg": "UX\\Settings\\IsContinuousInnovationOptedIn = 0",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-allowmuupdateservice",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Get Microsoft Office and other updates together with Windows updates",
+   "ranges": [
+    [
+     2131,
+     2131
+    ]
+   ],
+   "kind": "reg",
+   "order": 199,
+   "reg": "UX\\Settings\\AllowMUUpdateService = 0",
+   "path": "HKLM:\\Software\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-isexpedited",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Restart as soon as possible (even during active hours) to finish updating",
+   "ranges": [
+    [
+     2132,
+     2132
+    ]
+   ],
+   "kind": "reg",
+   "order": 200,
+   "reg": "UX\\Settings\\IsExpedited = 0",
+   "path": "HKLM:\\Software\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-noautorebootwithloggedonusers",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Prevents automatic restarts after installing updates when users are logged on",
+   "ranges": [
+    [
+     2133,
+     2133
+    ]
+   ],
+   "kind": "reg",
+   "order": 201,
+   "reg": "WindowsUpdate\\AU\\NoAutoRebootWithLoggedOnUsers = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "sys-wupdate-setupdatenotificationlevel",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Show or hide notifications about available updates and update progress",
+   "ranges": [
+    [
+     2134,
+     2134
+    ]
+   ],
+   "kind": "reg",
+   "order": 202,
+   "reg": "Windows\\WindowsUpdate\\SetUpdateNotificationLevel = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate"
+  },
+  {
+   "id": "sys-wupdate-restartnotificationsallowed2",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Show notification when your device requires a restart to finish updating",
+   "ranges": [
+    [
+     2135,
+     2135
+    ]
+   ],
+   "kind": "reg",
+   "order": 203,
+   "reg": "UX\\Settings\\RestartNotificationsAllowed2 = 0",
+   "path": "HKLM:\\Software\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-allowautowindowsupdatedownloadovermeterednetwork",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Allow Windows to download updates when using mobile hotspots or data-limited connections",
+   "ranges": [
+    [
+     2136,
+     2136
+    ]
+   ],
+   "kind": "reg",
+   "order": 204,
+   "reg": "UX\\Settings\\AllowAutoWindowsUpdateDownloadOverMeteredNetwork = 0",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings"
+  },
+  {
+   "id": "sys-wupdate-excludewudriversinqualityupdate",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Prevent Windows from automatically downloading and installing hardware driver updates",
+   "ranges": [
+    [
+     2137,
+     2137
+    ]
+   ],
+   "kind": "reg",
+   "order": 205,
+   "reg": "Windows\\WindowsUpdate\\ExcludeWUDriversInQualityUpdate = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate"
+  },
+  {
+   "id": "sys-wupdate-autodownload",
+   "group": "wupdate",
+   "scope": "sys",
+   "label": "Automatically download and install updates for apps from the Microsoft Store",
+   "ranges": [
+    [
+     2138,
+     2138
+    ]
+   ],
+   "kind": "reg",
+   "order": 206,
+   "reg": "Microsoft\\WindowsStore\\AutoDownload = 2",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\WindowsStore"
+  },
+  {
+   "id": "sys-explorer-regcontent-explorer-take-ownership",
+   "group": "explorer",
+   "scope": "sys",
+   "label": "Adds a right-click option to take ownership of files, folders, and drives with automatic permission elevation",
+   "ranges": [
+    [
+     2144,
+     2204
+    ]
+   ],
+   "kind": "regblock",
+   "order": 207,
+   "reg": "importa .reg"
+  },
+  {
+   "id": "sys-explorer-regcontent-explorer-context-menu-toggle-extensions",
+   "group": "explorer",
+   "scope": "sys",
+   "label": "Adds a right-click menu option to quickly toggle file extension visibility in File Explorer (only visible on the Classic Context Menu or Show More Options Menu in Windows 11)",
+   "ranges": [
+    [
+     2206,
+     2226
+    ]
+   ],
+   "kind": "regblock",
+   "order": 208,
+   "reg": "importa .reg"
+  },
+  {
+   "id": "sys-explorer-9f156763-7844-4dc4-b2b1-901f640f5155",
+   "group": "explorer",
+   "scope": "sys",
+   "label": "Displays the Windows Terminal option when right-clicking folders and backgrounds in File Explorer",
+   "ranges": [
+    [
+     2228,
+     2228
+    ]
+   ],
+   "kind": "reg",
+   "order": 209,
+   "reg": "remove {9F156763-7844-4DC4-B2B1-901F640F5155}",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Shell Extensions\\Blocked"
+  },
+  {
+   "id": "sys-explorer-0db7e03f-fc29-4dc6-9020-ff41b59e513a",
+   "group": "explorer",
+   "scope": "sys",
+   "label": "Display the 3D Objects folder alongside Documents, Pictures, and other default folders",
+   "ranges": [
+    [
+     2277,
+     2277
+    ]
+   ],
+   "kind": "reg",
+   "order": 210,
+   "reg": "remove {0DB7E03F-FC29-4DC6-9020-FF41B59E513A}",
+   "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
+  },
+  {
+   "id": "sys-explorer-0db7e03f-fc29-4dc6-9020-ff41b59e513a-2",
+   "group": "explorer",
+   "scope": "sys",
+   "label": "Display the 3D Objects folder alongside Documents, Pictures, and other default folders",
+   "ranges": [
+    [
+     2278,
+     2278
+    ]
+   ],
+   "kind": "reg",
+   "order": 211,
+   "reg": "remove {0DB7E03F-FC29-4DC6-9020-FF41B59E513A}",
+   "path": "HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
+  },
+  {
+   "id": "sys-explorer-f874310e-b6b7-47dc-bc84-b9e6b38f5903",
+   "group": "explorer",
+   "scope": "sys",
+   "label": "Display the Home folder in the navigation pane as a shortcut to your user profile folder",
+   "ranges": [
+    [
+     2279,
+     2279
+    ]
+   ],
+   "kind": "reg",
+   "order": 212,
+   "reg": "remove {f874310e-b6b7-47dc-bc84-b9e6b38f5903}",
+   "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Desktop\\NameSpace\\{f874310e-b6b7-47dc-bc84-b9e6b38f5903}"
+  },
+  {
+   "id": "sys-explorer-e88865ea-0e1c-4e20-9aa6-edcd0212c87c",
+   "group": "explorer",
+   "scope": "sys",
+   "label": "Display the Gallery folder in the navigation pane for quick access to all your photos and videos",
+   "ranges": [
+    [
+     2280,
+     2280
+    ]
+   ],
+   "kind": "reg",
+   "order": 213,
+   "reg": "remove {e88865ea-0e1c-4e20-9aa6-edcd0212c87c}",
+   "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Desktop\\NameSpace\\{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}"
+  },
+  {
+   "id": "sys-explorer-longpathsenabled",
+   "group": "explorer",
+   "scope": "sys",
+   "label": "Enables support for file paths with up to 32,767 characters instead of the traditional 260-character limit",
+   "ranges": [
+    [
+     2281,
+     2281
+    ]
+   ],
+   "kind": "reg",
+   "order": 214,
+   "reg": "Control\\FileSystem\\LongPathsEnabled = 1",
+   "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\FileSystem"
+  },
+  {
+   "id": "sys-start-hiderecommendedsection",
+   "group": "start",
+   "scope": "sys",
+   "label": "Show or hide the lower section that displays recently opened files and suggested apps",
+   "ranges": [
+    [
+     2287,
+     2287
+    ]
+   ],
+   "kind": "reg",
+   "order": 215,
+   "reg": "Windows\\Explorer\\HideRecommendedSection = 1",
+   "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Explorer"
+  },
+  {
+   "id": "sys-start-hiderecommendedsection-2",
+   "group": "start",
+   "scope": "sys",
+   "label": "Show or hide the lower section that displays recently opened files and suggested apps",
+   "ranges": [
+    [
+     2288,
+     2288
+    ]
+   ],
+   "kind": "reg",
+   "order": 216,
+   "reg": "device\\Start\\HideRecommendedSection = 1",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\Start"
+  },
+  {
+   "id": "sys-start-iseducationenvironment",
+   "group": "start",
+   "scope": "sys",
+   "label": "Show or hide the lower section that displays recently opened files and suggested apps",
+   "ranges": [
+    [
+     2289,
+     2289
+    ]
+   ],
+   "kind": "reg",
+   "order": 217,
+   "reg": "device\\Education\\IsEducationEnvironment = 1",
+   "path": "HKLM:\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\Education"
+  },
+  {
+   "id": "sys-start-disablesearchboxsuggestions",
+   "group": "start",
+   "scope": "sys",
+   "label": "Prevent web results from Bing from appearing when searching in the Start Menu, showing only local files and apps",
+   "ranges": [
+    [
+     2290,
+     2290
+    ]
+   ],
+   "kind": "reg",
+   "order": 218,
+   "reg": "Windows\\Explorer\\DisableSearchBoxSuggestions = 1",
+   "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\Explorer"
+  },
+  {
+   "id": "sys-taskbar-hidescameetnow",
+   "group": "taskbar",
+   "scope": "sys",
+   "label": "Controls Meet Now button visibility in the system tray",
+   "ranges": [
+    [
+     2296,
+     2296
+    ]
+   ],
+   "kind": "reg",
+   "order": 219,
+   "reg": "Policies\\Explorer\\HideSCAMeetNow = 1",
+   "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer"
+  },
+  {
+   "id": "sys-taskbar-allownewsandinterests",
+   "group": "taskbar",
+   "scope": "sys",
+   "label": "Show the Widgets button that displays personalized news, weather, calendar, and other information",
+   "ranges": [
+    [
+     2297,
+     2297
+    ]
+   ],
+   "kind": "reg",
+   "order": 220,
+   "reg": "Microsoft\\Dsh\\AllowNewsAndInterests = 0",
+   "path": "HKLM:\\Software\\Policies\\Microsoft\\Dsh"
+  },
+  {
+   "id": "sys-taskbar-enablefeeds",
+   "group": "taskbar",
+   "scope": "sys",
+   "label": "Show the News and Interests widget that displays headlines, weather, stocks, and other personalized content",
+   "ranges": [
+    [
+     2298,
+     2298
+    ]
+   ],
+   "kind": "reg",
+   "order": 221,
+   "reg": "Windows\\Windows Feeds\\EnableFeeds = 0",
+   "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\Windows Feeds"
+  },
+  {
+   "id": "usr-perf-autogamemodeenabled",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Optimize your PC for play by turning things off in the background",
+   "ranges": [
+    [
+     2433,
+     2433
+    ]
+   ],
+   "kind": "reg",
+   "order": 222,
+   "reg": "Microsoft\\GameBar\\AutoGameModeEnabled = 1",
+   "path": "HKCU:\\Software\\Microsoft\\GameBar"
+  },
+  {
+   "id": "usr-perf-mousespeed",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Adjust cursor speed based on movement velocity (mouse acceleration). Most competitive gamers disable this for consistent aiming in FPS games",
+   "ranges": [
+    [
+     2434,
+     2434
+    ]
+   ],
+   "kind": "reg",
+   "order": 223,
+   "reg": "Control Panel\\Mouse\\MouseSpeed = 0",
+   "path": "HKCU:\\Control Panel\\Mouse"
+  },
+  {
+   "id": "usr-perf-startupdelayinmsec",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Delay startup applications by 10 seconds after boot to improve initial system responsiveness. Windows becomes usable faster, but your startup apps take longer to load",
+   "ranges": [
+    [
+     2435,
+     2435
+    ]
+   ],
+   "kind": "reg",
+   "order": 224,
+   "reg": "Explorer\\Serialize\\StartupDelayInMSec = 10000",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Serialize"
+  },
+  {
+   "id": "usr-perf-letappsruninbackground",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Allow apps to receive notifications, update data, and perform tasks even when not actively in use",
+   "ranges": [
+    [
+     2436,
+     2436
+    ]
+   ],
+   "kind": "reg",
+   "order": 225,
+   "reg": "Windows\\AppPrivacy\\LetAppsRunInBackground = 0",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy"
+  },
+  {
+   "id": "usr-perf-allowstoragesenseglobal",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Automatically free up disk space by removing temporary files, emptying the recycle bin, and managing downloads",
+   "ranges": [
+    [
+     2437,
+     2437
+    ]
+   ],
+   "kind": "reg",
+   "order": 226,
+   "reg": "Windows\\StorageSense\\AllowStorageSenseGlobal = 0",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\StorageSense"
+  },
+  {
+   "id": "usr-perf-wholefilesystem",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Search your entire file system instead of only indexed locations. This provides more complete results but is significantly slower than indexed search and increases disk activity",
+   "ranges": [
+    [
+     2438,
+     2438
+    ]
+   ],
+   "kind": "reg",
+   "order": 227,
+   "reg": "Search\\Preferences\\WholeFileSystem = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Search\\Preferences"
+  },
+  {
+   "id": "usr-perf-jpegimportquality",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Allow Windows to compress wallpapers to save disk space and improve performance. Only affects images in JPEG format.",
+   "ranges": [
+    [
+     2439,
+     2439
+    ]
+   ],
+   "kind": "reg",
+   "order": 228,
+   "reg": "Control Panel\\Desktop\\JPEGImportQuality = 100",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-menushowdelay",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Add a brief delay before displaying menus, or show them instantly for faster navigation",
+   "ranges": [
+    [
+     2440,
+     2440
+    ]
+   ],
+   "kind": "reg",
+   "order": 229,
+   "reg": "Control Panel\\Desktop\\MenuShowDelay = 0",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-multitaskingalttabfilter",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Show only traditional open windows in Alt+Tab instead of including Microsoft Edge tabs and other Windows suggestions",
+   "ranges": [
+    [
+     2441,
+     2441
+    ]
+   ],
+   "kind": "reg",
+   "order": 230,
+   "reg": "Explorer\\Advanced\\MultiTaskingAltTabFilter = 3",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-perf-directxuserglobalsettings",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Reduce latency and use advanced features in compatible games by using DirectX flip presentation model",
+   "ranges": [
+    [
+     2442,
+     2442
+    ]
+   ],
+   "kind": "reg",
+   "order": 231,
+   "reg": "DirectX\\UserGpuPreferences\\DirectXUserGlobalSettings = SwapEffectUpgradeEnable=1;",
+   "path": "HKCU:\\Software\\Microsoft\\DirectX\\UserGpuPreferences"
+  },
+  {
+   "id": "usr-perf-vrroptimizeenable",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enable VRR (G-Sync/FreeSync) optimizations for smoother gameplay on compatible monitors. Disable only if experiencing issues with VRR displays",
+   "ranges": [
+    [
+     2443,
+     2443
+    ]
+   ],
+   "kind": "reg",
+   "order": 232,
+   "reg": "DirectX\\UserGpuPreferences\\VRROptimizeEnable = 0",
+   "path": "HKCU:\\Software\\Microsoft\\DirectX\\UserGpuPreferences"
+  },
+  {
+   "id": "usr-perf-gamedvr-fsebehaviormode",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Allow Windows to optimize games running in fullscreen mode. Disabling can fix performance issues or stuttering in some older games that don't work well with borderless fullscreen optimization",
+   "ranges": [
+    [
+     2444,
+     2444
+    ]
+   ],
+   "kind": "reg",
+   "order": 233,
+   "reg": "System\\GameConfigStore\\GameDVR_FSEBehaviorMode = 0",
+   "path": "HKCU:\\System\\GameConfigStore"
+  },
+  {
+   "id": "usr-perf-compositionpolicy",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enable visual effects managed by the Desktop Window Manager. Disabling may provide minor performance gains on older hardware but will break Aero effects",
+   "ranges": [
+    [
+     2445,
+     2445
+    ]
+   ],
+   "kind": "reg",
+   "order": 234,
+   "reg": "Windows\\DWM\\CompositionPolicy = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\DWM"
+  },
+  {
+   "id": "usr-perf-gamedvr-enabled",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Record gameplay clips and take screenshots using the Xbox Game Bar overlay. Disabling reduces CPU/GPU usage and can improve frame rates",
+   "ranges": [
+    [
+     2446,
+     2446
+    ]
+   ],
+   "kind": "reg",
+   "order": 235,
+   "reg": "System\\GameConfigStore\\GameDVR_Enabled = 0",
+   "path": "HKCU:\\System\\GameConfigStore"
+  },
+  {
+   "id": "usr-perf-usenexusforgamebarenabled",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Allow your Xbox/compatible controller to open Game Bar by pressing the Xbox button. Disable to prevent accidental Game Bar activation during gaming",
+   "ranges": [
+    [
+     2447,
+     2447
+    ]
+   ],
+   "kind": "reg",
+   "order": 236,
+   "reg": "Microsoft\\GameBar\\UseNexusForGameBarEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\GameBar"
+  },
+  {
+   "id": "usr-perf-showstartuppanel",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Show tips and hints about Game Bar features when opening the overlay. Disabling reduces distractions during gameplay",
+   "ranges": [
+    [
+     2448,
+     2448
+    ]
+   ],
+   "kind": "reg",
+   "order": 237,
+   "reg": "Microsoft\\GameBar\\ShowStartupPanel = 0",
+   "path": "HKCU:\\Software\\Microsoft\\GameBar"
+  },
+  {
+   "id": "usr-perf-visualfxsetting",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Choose how Windows displays visual effects",
+   "ranges": [
+    [
+     2449,
+     2449
+    ]
+   ],
+   "kind": "reg",
+   "order": 238,
+   "reg": "Explorer\\VisualEffects\\VisualFXSetting = 3",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects"
+  },
+  {
+   "id": "usr-perf-userpreferencesmask",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enables animation effects for controls and UI elements",
+   "ranges": [
+    [
+     2450,
+     2450
+    ]
+   ],
+   "kind": "reg",
+   "order": 239,
+   "reg": "UserPreferencesMask (bit/byte) em Desktop",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-minanimate",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Shows smooth animation when windows are minimized or maximized",
+   "ranges": [
+    [
+     2451,
+     2451
+    ]
+   ],
+   "kind": "reg",
+   "order": 240,
+   "reg": "Desktop\\WindowMetrics\\MinAnimate = 0",
+   "path": "HKCU:\\Control Panel\\Desktop\\WindowMetrics"
+  },
+  {
+   "id": "usr-perf-taskbaranimations",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Controls taskbar animation effects for opening, closing, and switching windows",
+   "ranges": [
+    [
+     2452,
+     2452
+    ]
+   ],
+   "kind": "reg",
+   "order": 241,
+   "reg": "Explorer\\Advanced\\TaskbarAnimations = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-perf-enableaeropeek",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Allows peeking at desktop when hovering over Show Desktop button",
+   "ranges": [
+    [
+     2453,
+     2453
+    ]
+   ],
+   "kind": "reg",
+   "order": 242,
+   "reg": "Windows\\DWM\\EnableAeroPeek = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\DWM"
+  },
+  {
+   "id": "usr-perf-userpreferencesmask-2",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Animates menus when they appear using fade or slide effects",
+   "ranges": [
+    [
+     2454,
+     2454
+    ]
+   ],
+   "kind": "reg",
+   "order": 243,
+   "reg": "UserPreferencesMask (bit/byte) em Desktop",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-userpreferencesmask-3",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Animates tooltips when they appear using fade or slide effects",
+   "ranges": [
+    [
+     2455,
+     2455
+    ]
+   ],
+   "kind": "reg",
+   "order": 244,
+   "reg": "UserPreferencesMask (bit/byte) em Desktop",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-userpreferencesmask-4",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Fades menu items after selection before closing the menu",
+   "ranges": [
+    [
+     2456,
+     2456
+    ]
+   ],
+   "kind": "reg",
+   "order": 245,
+   "reg": "UserPreferencesMask (bit/byte) em Desktop",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-alwayshibernatethumbnails",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Saves thumbnail previews of taskbar windows for faster display",
+   "ranges": [
+    [
+     2457,
+     2457
+    ]
+   ],
+   "kind": "reg",
+   "order": 246,
+   "reg": "Windows\\DWM\\AlwaysHibernateThumbnails = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\DWM"
+  },
+  {
+   "id": "usr-perf-userpreferencesmask-5",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Displays shadow effect underneath the mouse cursor",
+   "ranges": [
+    [
+     2458,
+     2458
+    ]
+   ],
+   "kind": "reg",
+   "order": 247,
+   "reg": "UserPreferencesMask (bit/byte) em Desktop",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-userpreferencesmask-6",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Displays shadow effects underneath windows",
+   "ranges": [
+    [
+     2459,
+     2459
+    ]
+   ],
+   "kind": "reg",
+   "order": 248,
+   "reg": "UserPreferencesMask (bit/byte) em Desktop",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-iconsonly",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Displays image and document previews instead of generic file icons",
+   "ranges": [
+    [
+     2460,
+     2460
+    ]
+   ],
+   "kind": "reg",
+   "order": 249,
+   "reg": "Explorer\\Advanced\\IconsOnly = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-perf-listviewalphaselect",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Display a semi-transparent selection box when dragging to select multiple files or items",
+   "ranges": [
+    [
+     2461,
+     2461
+    ]
+   ],
+   "kind": "reg",
+   "order": 250,
+   "reg": "Explorer\\Advanced\\ListviewAlphaSelect = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-perf-dragfullwindows",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Displays window contents when dragging instead of just an outline",
+   "ranges": [
+    [
+     2462,
+     2462
+    ]
+   ],
+   "kind": "reg",
+   "order": 251,
+   "reg": "Control Panel\\Desktop\\DragFullWindows = 1",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-userpreferencesmask-7",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Animates combo boxes when they open with a sliding effect",
+   "ranges": [
+    [
+     2463,
+     2463
+    ]
+   ],
+   "kind": "reg",
+   "order": 252,
+   "reg": "UserPreferencesMask (bit/byte) em Desktop",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-fontsmoothing",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Apply anti-aliasing to text for smoother, more readable fonts on screen",
+   "ranges": [
+    [
+     2464,
+     2464
+    ]
+   ],
+   "kind": "reg",
+   "order": 253,
+   "reg": "Control Panel\\Desktop\\FontSmoothing = 2",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-userpreferencesmask-8",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enables smooth scrolling in list boxes instead of jumping",
+   "ranges": [
+    [
+     2465,
+     2465
+    ]
+   ],
+   "kind": "reg",
+   "order": 254,
+   "reg": "UserPreferencesMask (bit/byte) em Desktop",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-perf-listviewshadow",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Add shadow effects behind desktop icon text to improve readability against backgrounds",
+   "ranges": [
+    [
+     2466,
+     2466
+    ]
+   ],
+   "kind": "reg",
+   "order": 255,
+   "reg": "Explorer\\Advanced\\ListviewShadow = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-perf-winenterlaunchenabled",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enable the Win+Ctrl+Enter keyboard shortcut to quickly launch Windows Narrator screen reader",
+   "ranges": [
+    [
+     2467,
+     2467
+    ]
+   ],
+   "kind": "reg",
+   "order": 256,
+   "reg": "Narrator\\NoRoam\\WinEnterLaunchEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Narrator\\NoRoam"
+  },
+  {
+   "id": "usr-perf-flags",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enable the keyboard shortcut to activate StickyKeys by pressing the Shift key five times",
+   "ranges": [
+    [
+     2468,
+     2468
+    ]
+   ],
+   "kind": "reg",
+   "order": 257,
+   "reg": "Accessibility\\StickyKeys\\Flags = 2",
+   "path": "HKCU:\\Control Panel\\Accessibility\\StickyKeys"
+  },
+  {
+   "id": "usr-perf-flags-2",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enable the keyboard shortcut to activate FilterKeys by holding the right Shift key for 8 seconds",
+   "ranges": [
+    [
+     2469,
+     2469
+    ]
+   ],
+   "kind": "reg",
+   "order": 258,
+   "reg": "Accessibility\\Keyboard Response\\Flags = 2",
+   "path": "HKCU:\\Control Panel\\Accessibility\\Keyboard Response"
+  },
+  {
+   "id": "usr-perf-flags-3",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enable the keyboard shortcut to activate ToggleKeys by holding Num Lock for 5 seconds, which plays sounds when Caps/Num/Scroll Lock are pressed",
+   "ranges": [
+    [
+     2470,
+     2470
+    ]
+   ],
+   "kind": "reg",
+   "order": 259,
+   "reg": "Accessibility\\ToggleKeys\\Flags = 34",
+   "path": "HKCU:\\Control Panel\\Accessibility\\ToggleKeys"
+  },
+  {
+   "id": "usr-perf-flags-4",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enable the keyboard shortcut to activate MouseKeys, which allows using the numeric keypad to control the mouse pointer",
+   "ranges": [
+    [
+     2471,
+     2471
+    ]
+   ],
+   "kind": "reg",
+   "order": 260,
+   "reg": "Accessibility\\MouseKeys\\Flags = 130",
+   "path": "HKCU:\\Control Panel\\Accessibility\\MouseKeys"
+  },
+  {
+   "id": "usr-perf-flags-5",
+   "group": "perf",
+   "scope": "usr",
+   "label": "Enable the keyboard shortcut to activate High Contrast mode by pressing Left Alt + Left Shift + Print Screen",
+   "ranges": [
+    [
+     2472,
+     2472
+    ]
+   ],
+   "kind": "reg",
+   "order": 261,
+   "reg": "Accessibility\\HighContrast\\Flags = 4194",
+   "path": "HKCU:\\Control Panel\\Accessibility\\HighContrast"
+  },
+  {
+   "id": "usr-notif-toastenabled",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Get notifications from apps and other senders in Windows",
+   "ranges": [
+    [
+     2478,
+     2478
+    ]
+   ],
+   "kind": "reg",
+   "order": 262,
+   "reg": "CurrentVersion\\PushNotifications\\ToastEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\PushNotifications"
+  },
+  {
+   "id": "usr-notif-noc-global-setting-allow-notification-sound",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Play audio alerts when notifications arrive from apps and system senders",
+   "ranges": [
+    [
+     2479,
+     2479
+    ]
+   ],
+   "kind": "reg",
+   "order": 263,
+   "reg": "Notifications\\Settings\\NOC_GLOBAL_SETTING_ALLOW_NOTIFICATION_SOUND = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Notifications\\Settings"
+  },
+  {
+   "id": "usr-notif-noc-global-setting-allow-toasts-above-lock",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Display toast notifications on the lock screen when your device is locked",
+   "ranges": [
+    [
+     2480,
+     2480
+    ]
+   ],
+   "kind": "reg",
+   "order": 264,
+   "reg": "Notifications\\Settings\\NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Notifications\\Settings"
+  },
+  {
+   "id": "usr-notif-lockscreentoastenabled",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Display toast notifications on the lock screen when your device is locked",
+   "ranges": [
+    [
+     2481,
+     2481
+    ]
+   ],
+   "kind": "reg",
+   "order": 265,
+   "reg": "CurrentVersion\\PushNotifications\\LockScreenToastEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\PushNotifications"
+  },
+  {
+   "id": "usr-notif-noc-global-setting-allow-critical-toasts-above-lock",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Display critical notifications like reminders and VoIP calls when your device is locked",
+   "ranges": [
+    [
+     2482,
+     2482
+    ]
+   ],
+   "kind": "reg",
+   "order": 266,
+   "reg": "Notifications\\Settings\\NOC_GLOBAL_SETTING_ALLOW_CRITICAL_TOASTS_ABOVE_LOCK = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Notifications\\Settings"
+  },
+  {
+   "id": "usr-notif-shownotificationicon",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Display the notification bell icon in the system tray",
+   "ranges": [
+    [
+     2483,
+     2483
+    ]
+   ],
+   "kind": "reg",
+   "order": 267,
+   "reg": "Explorer\\Advanced\\ShowNotificationIcon = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-notif-subscribedcontent-310093enabled",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show what's new and suggested after updates and when signed in",
+   "ranges": [
+    [
+     2484,
+     2484
+    ]
+   ],
+   "kind": "reg",
+   "order": 268,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SubscribedContent-310093Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-notif-scoobesystemsettingenabled",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show suggestions to help you complete device setup and optimize Windows features",
+   "ranges": [
+    [
+     2485,
+     2485
+    ]
+   ],
+   "kind": "reg",
+   "order": 269,
+   "reg": "CurrentVersion\\UserProfileEngagement\\ScoobeSystemSettingEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\UserProfileEngagement"
+  },
+  {
+   "id": "usr-notif-subscribedcontent-338389enabled",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show helpful tips and suggestions while using Windows",
+   "ranges": [
+    [
+     2486,
+     2486
+    ]
+   ],
+   "kind": "reg",
+   "order": 270,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SubscribedContent-338389Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-notif-systempanesuggestionsenabled",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Display helpful suggestions in the Action Center and Notification Center",
+   "ranges": [
+    [
+     2487,
+     2487
+    ]
+   ],
+   "kind": "reg",
+   "order": 271,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SystemPaneSuggestionsEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-notif-enabled",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show notifications when apps request access to system capabilities and permissions",
+   "ranges": [
+    [
+     2488,
+     2488
+    ]
+   ],
+   "kind": "reg",
+   "order": 272,
+   "reg": "Settings\\Windows.SystemToast.CapabilityAccess\\Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Notifications\\Settings\\Windows.SystemToast.CapabilityAccess"
+  },
+  {
+   "id": "usr-notif-enabled-2",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show notifications when apps are added to your Windows startup list",
+   "ranges": [
+    [
+     2489,
+     2489
+    ]
+   ],
+   "kind": "reg",
+   "order": 273,
+   "reg": "Settings\\Windows.SystemToast.StartupApp\\Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Notifications\\Settings\\Windows.SystemToast.StartupApp"
+  },
+  {
+   "id": "usr-notif-showglobalprompts",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show notifications when apps attempt to access your location information",
+   "ranges": [
+    [
+     2490,
+     2490
+    ]
+   ],
+   "kind": "reg",
+   "order": 274,
+   "reg": "ConsentStore\\location\\ShowGlobalPrompts = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\location"
+  },
+  {
+   "id": "usr-notif-dstnotification",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show notifications when daylight saving time changes occur",
+   "ranges": [
+    [
+     2491,
+     2491
+    ]
+   ],
+   "kind": "reg",
+   "order": 275,
+   "reg": "Control Panel\\Desktop\\DstNotification = 0",
+   "path": "HKCU:\\Control Panel\\Desktop"
+  },
+  {
+   "id": "usr-notif-disablenotifications",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show all notifications from Windows Security about threats, scans, and protection status",
+   "ranges": [
+    [
+     2492,
+     2492
+    ]
+   ],
+   "kind": "reg",
+   "order": 276,
+   "reg": "Windows Defender Security Center\\Notifications\\DisableNotifications = 0",
+   "path": "HKCU:\\Software\\Policies\\Microsoft\\Windows Defender Security Center\\Notifications"
+  },
+  {
+   "id": "usr-notif-disableenhancednotifications",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show all notifications from Windows Security about threats, scans, and protection status",
+   "ranges": [
+    [
+     2493,
+     2493
+    ]
+   ],
+   "kind": "reg",
+   "order": 277,
+   "reg": "Windows Defender Security Center\\Notifications\\DisableEnhancedNotifications = 0",
+   "path": "HKCU:\\Software\\Policies\\Microsoft\\Windows Defender Security Center\\Notifications"
+  },
+  {
+   "id": "usr-notif-enabled-3",
+   "group": "notif",
+   "scope": "usr",
+   "label": "Show notifications from the Security and Maintenance Action Center",
+   "ranges": [
+    [
+     2494,
+     2494
+    ]
+   ],
+   "kind": "reg",
+   "order": 278,
+   "reg": "Settings\\Windows.SystemToast.SecurityAndMaintenance\\Enabled = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Notifications\\Settings\\Windows.SystemToast.SecurityAndMaintenance"
+  },
+  {
+   "id": "usr-privacy-blockaadworkplacejoin",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Blocks the 'Allow my organization to manage my device' and 'No, sign in to this app only' pop-up messages",
+   "ranges": [
+    [
+     2500,
+     2500
+    ]
+   ],
+   "kind": "reg",
+   "order": 279,
+   "reg": "Windows\\WorkplaceJoin\\BlockAADWorkplaceJoin = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WorkplaceJoin"
+  },
+  {
+   "id": "usr-privacy-disabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Stops Windows from collecting and sending crash reports and error information to Microsoft",
+   "ranges": [
+    [
+     2501,
+     2501
+    ]
+   ],
+   "kind": "reg",
+   "order": 280,
+   "reg": "Windows\\Windows Error Reporting\\Disabled = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Error Reporting"
+  },
+  {
+   "id": "usr-privacy-adspromotionalcontentmode",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Controls all advertising, suggestions, and promotional content throughout Windows",
+   "ranges": [
+    [
+     2502,
+     2502
+    ]
+   ],
+   "kind": "reg",
+   "order": 281,
+   "reg": "Winhance\\Settings\\AdsPromotionalContentMode = 1",
+   "path": "HKCU:\\Software\\Winhance\\Settings"
+  },
+  {
+   "id": "usr-privacy-contentdeliveryallowed",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Allows Windows to deliver promotional content and automatically install suggested apps",
+   "ranges": [
+    [
+     2503,
+     2503
+    ]
+   ],
+   "kind": "reg",
+   "order": 282,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\ContentDeliveryAllowed = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-subscribedcontentenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Enables promotional content subscriptions from Microsoft and partners throughout Windows",
+   "ranges": [
+    [
+     2504,
+     2504
+    ]
+   ],
+   "kind": "reg",
+   "order": 283,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SubscribedContentEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-featuremanagementenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Enables Windows feature management functionality for promotional features and automatic app installations",
+   "ranges": [
+    [
+     2505,
+     2505
+    ]
+   ],
+   "kind": "reg",
+   "order": 284,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\FeatureManagementEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-softlandingenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Displays tips and notifications about Windows features as you use the operating system",
+   "ranges": [
+    [
+     2506,
+     2506
+    ]
+   ],
+   "kind": "reg",
+   "order": 285,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SoftLandingEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-oempreinstalledappsenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Prevents OEM manufacturers from automatically installing bloatware apps",
+   "ranges": [
+    [
+     2507,
+     2507
+    ]
+   ],
+   "kind": "reg",
+   "order": 286,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\OemPreInstalledAppsEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-preinstalledappsenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Prevents Microsoft from automatically installing suggested apps",
+   "ranges": [
+    [
+     2508,
+     2508
+    ]
+   ],
+   "kind": "reg",
+   "order": 287,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\PreInstalledAppsEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-preinstalledappseverenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Disables tracking of whether pre-installed apps were ever enabled",
+   "ranges": [
+    [
+     2509,
+     2509
+    ]
+   ],
+   "kind": "reg",
+   "order": 288,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\PreInstalledAppsEverEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-silentinstalledappsenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Prevents apps from being silently installed in the background",
+   "ranges": [
+    [
+     2510,
+     2510
+    ]
+   ],
+   "kind": "reg",
+   "order": 289,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SilentInstalledAppsEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-rotatinglockscreenenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Displays rotating Windows Spotlight images on your lock screen instead of a static background",
+   "ranges": [
+    [
+     2511,
+     2511
+    ]
+   ],
+   "kind": "reg",
+   "order": 290,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\RotatingLockScreenEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-rotatinglockscreenoverlayenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Displays fun facts, tips, and tricks as an overlay on your lock screen",
+   "ranges": [
+    [
+     2512,
+     2512
+    ]
+   ],
+   "kind": "reg",
+   "order": 291,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\RotatingLockScreenOverlayEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-slideshowenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Enables slideshow option for lock screen background",
+   "ranges": [
+    [
+     2513,
+     2513
+    ]
+   ],
+   "kind": "reg",
+   "order": 292,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SlideshowEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-enabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Windows generates a unique advertising ID that apps use to track your activity and deliver personalized ads based on your behavior across different apps",
+   "ranges": [
+    [
+     2514,
+     2514
+    ]
+   ],
+   "kind": "reg",
+   "order": 293,
+   "reg": "CurrentVersion\\AdvertisingInfo\\Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo"
+  },
+  {
+   "id": "usr-privacy-disabledbygrouppolicy",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Windows generates a unique advertising ID that apps use to track your activity and deliver personalized ads based on your behavior across different apps",
+   "ranges": [
+    [
+     2515,
+     2515
+    ]
+   ],
+   "kind": "reg",
+   "order": 294,
+   "reg": "Windows\\AdvertisingInfo\\DisabledByGroupPolicy = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo"
+  },
+  {
+   "id": "usr-privacy-httpacceptlanguageoptout",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Allows websites to access your language preferences so they can automatically display content in your preferred language without requiring manual configuration on each site",
+   "ranges": [
+    [
+     2516,
+     2516
+    ]
+   ],
+   "kind": "reg",
+   "order": 295,
+   "reg": "International\\User Profile\\HttpAcceptLanguageOptOut = 1",
+   "path": "HKCU:\\Control Panel\\International\\User Profile"
+  },
+  {
+   "id": "usr-privacy-start-trackprogs",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Windows records which apps you use most frequently to personalize your Start menu and improve search results, making your most-used apps more accessible",
+   "ranges": [
+    [
+     2517,
+     2517
+    ]
+   ],
+   "kind": "reg",
+   "order": 296,
+   "reg": "Explorer\\Advanced\\Start_TrackProgs = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-privacy-subscribedcontent-338393enabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Microsoft displays promotional content, tips, and feature suggestions within the Windows Settings app to help you discover new features and functionality",
+   "ranges": [
+    [
+     2518,
+     2518
+    ]
+   ],
+   "kind": "reg",
+   "order": 297,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SubscribedContent-338393Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-subscribedcontent-353694enabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Microsoft displays promotional content, tips, and feature suggestions within the Windows Settings app to help you discover new features and functionality",
+   "ranges": [
+    [
+     2519,
+     2519
+    ]
+   ],
+   "kind": "reg",
+   "order": 298,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SubscribedContent-353694Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-subscribedcontent-353696enabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Microsoft displays promotional content, tips, and feature suggestions within the Windows Settings app to help you discover new features and functionality",
+   "ranges": [
+    [
+     2520,
+     2520
+    ]
+   ],
+   "kind": "reg",
+   "order": 299,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SubscribedContent-353696Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-enableaccountnotifications",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Shows account notifications in the Settings app, including prompts to reauthenticate, backup your device, and manage subscriptions",
+   "ranges": [
+    [
+     2521,
+     2521
+    ]
+   ],
+   "kind": "reg",
+   "order": 300,
+   "reg": "SystemSettings\\AccountNotifications\\EnableAccountNotifications = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\SystemSettings\\AccountNotifications"
+  },
+  {
+   "id": "usr-privacy-hasaccepted",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Use your voice for apps using Microsoft's online speech recognition technology",
+   "ranges": [
+    [
+     2522,
+     2522
+    ]
+   ],
+   "kind": "reg",
+   "order": 301,
+   "reg": "Settings\\OnlineSpeechPrivacy\\HasAccepted = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Speech_OneCore\\Settings\\OnlineSpeechPrivacy"
+  },
+  {
+   "id": "usr-privacy-allowinputpersonalization",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Use your voice for apps using Microsoft's online speech recognition technology",
+   "ranges": [
+    [
+     2523,
+     2523
+    ]
+   ],
+   "kind": "reg",
+   "order": 302,
+   "reg": "Microsoft\\InputPersonalization\\AllowInputPersonalization = 0",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\InputPersonalization"
+  },
+  {
+   "id": "usr-privacy-onlineservicesenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Allow Narrator to use Microsoft cloud services for features like intelligent image descriptions and enhanced voice models",
+   "ranges": [
+    [
+     2524,
+     2524
+    ]
+   ],
+   "kind": "reg",
+   "order": 303,
+   "reg": "Narrator\\NoRoam\\OnlineServicesEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Narrator\\NoRoam"
+  },
+  {
+   "id": "usr-privacy-scriptingenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Allow Narrator to execute scripts for automation and custom functionality",
+   "ranges": [
+    [
+     2525,
+     2525
+    ]
+   ],
+   "kind": "reg",
+   "order": 304,
+   "reg": "Narrator\\NoRoam\\ScriptingEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Narrator\\NoRoam"
+  },
+  {
+   "id": "usr-privacy-value",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Uses your typing history and handwriting patterns to create a custom dictionary (turning off will clear all words in your custom dictionary)",
+   "ranges": [
+    [
+     2526,
+     2526
+    ]
+   ],
+   "kind": "reg",
+   "order": 305,
+   "reg": "Store\\InkingAndTypingPersonalization\\Value = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CPSS\\Store\\InkingAndTypingPersonalization"
+  },
+  {
+   "id": "usr-privacy-acceptedprivacypolicy",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Uses your typing history and handwriting patterns to create a custom dictionary (turning off will clear all words in your custom dictionary)",
+   "ranges": [
+    [
+     2527,
+     2527
+    ]
+   ],
+   "kind": "reg",
+   "order": 306,
+   "reg": "Personalization\\Settings\\AcceptedPrivacyPolicy = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Personalization\\Settings"
+  },
+  {
+   "id": "usr-privacy-restrictimplicittextcollection",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Uses your typing history and handwriting patterns to create a custom dictionary (turning off will clear all words in your custom dictionary)",
+   "ranges": [
+    [
+     2528,
+     2528
+    ]
+   ],
+   "kind": "reg",
+   "order": 307,
+   "reg": "Microsoft\\InputPersonalization\\RestrictImplicitTextCollection = 1",
+   "path": "HKCU:\\Software\\Microsoft\\InputPersonalization"
+  },
+  {
+   "id": "usr-privacy-harvestcontacts",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Uses your typing history and handwriting patterns to create a custom dictionary (turning off will clear all words in your custom dictionary)",
+   "ranges": [
+    [
+     2529,
+     2529
+    ]
+   ],
+   "kind": "reg",
+   "order": 308,
+   "reg": "InputPersonalization\\TrainedDataStore\\HarvestContacts = 0",
+   "path": "HKCU:\\Software\\Microsoft\\InputPersonalization\\TrainedDataStore"
+  },
+  {
+   "id": "usr-privacy-showedtoastatlevel",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Send diagnostic data to Microsoft to help improve Windows and keep it secure",
+   "ranges": [
+    [
+     2530,
+     2530
+    ]
+   ],
+   "kind": "reg",
+   "order": 309,
+   "reg": "Diagnostics\\DiagTrack\\ShowedToastAtLevel = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Diagnostics\\DiagTrack"
+  },
+  {
+   "id": "usr-privacy-allowtelemetry",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Send diagnostic data to Microsoft to help improve Windows and keep it secure",
+   "ranges": [
+    [
+     2531,
+     2531
+    ]
+   ],
+   "kind": "reg",
+   "order": 310,
+   "reg": "Windows\\DataCollection\\AllowTelemetry = 0",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection"
+  },
+  {
+   "id": "usr-privacy-allowtelemetry-2",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Send diagnostic data to Microsoft to help improve Windows and keep it secure",
+   "ranges": [
+    [
+     2532,
+     2532
+    ]
+   ],
+   "kind": "reg",
+   "order": 311,
+   "reg": "Policies\\DataCollection\\AllowTelemetry = 1",
+   "path": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection"
+  },
+  {
+   "id": "usr-privacy-maxtelemetryallowed",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Send diagnostic data to Microsoft to help improve Windows and keep it secure",
+   "ranges": [
+    [
+     2533,
+     2533
+    ]
+   ],
+   "kind": "reg",
+   "order": 312,
+   "reg": "Policies\\DataCollection\\MaxTelemetryAllowed = 1",
+   "path": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection"
+  },
+  {
+   "id": "usr-privacy-enabled-2",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Send optional inking and typing diagnostic data to Microsoft",
+   "ranges": [
+    [
+     2534,
+     2534
+    ]
+   ],
+   "kind": "reg",
+   "order": 313,
+   "reg": "Input\\TIPC\\Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Input\\TIPC"
+  },
+  {
+   "id": "usr-privacy-value-2",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Send optional inking and typing diagnostic data to Microsoft",
+   "ranges": [
+    [
+     2535,
+     2535
+    ]
+   ],
+   "kind": "reg",
+   "order": 314,
+   "reg": "Store\\ImproveInkingAndTyping\\Value = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CPSS\\Store\\ImproveInkingAndTyping"
+  },
+  {
+   "id": "usr-privacy-tailoredexperienceswithdiagnosticdataenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Let Microsoft use your diagnostic data to show personalized tips, ads and recommendations",
+   "ranges": [
+    [
+     2536,
+     2536
+    ]
+   ],
+   "kind": "reg",
+   "order": 315,
+   "reg": "CurrentVersion\\Privacy\\TailoredExperiencesWithDiagnosticDataEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Privacy"
+  },
+  {
+   "id": "usr-privacy-disabletailoredexperienceswithdiagnosticdata",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Let Microsoft use your diagnostic data to show personalized tips, ads and recommendations",
+   "ranges": [
+    [
+     2537,
+     2537
+    ]
+   ],
+   "kind": "reg",
+   "order": 316,
+   "reg": "Windows\\CloudContent\\DisableTailoredExperiencesWithDiagnosticData = 1",
+   "path": "HKCU:\\Software\\Policies\\Microsoft\\Windows\\CloudContent"
+  },
+  {
+   "id": "usr-privacy-donotshowfeedbacknotifications",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Let Windows ask you to provide feedback on experiences in Windows",
+   "ranges": [
+    [
+     2538,
+     2538
+    ]
+   ],
+   "kind": "reg",
+   "order": 317,
+   "reg": "Windows\\DataCollection\\DoNotShowFeedbackNotifications = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection"
+  },
+  {
+   "id": "usr-privacy-publishuseractivities",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Allows you to jump back into what you were doing with apps, docs, or other activities on startup",
+   "ranges": [
+    [
+     2539,
+     2539
+    ]
+   ],
+   "kind": "reg",
+   "order": 318,
+   "reg": "Windows\\System\\PublishUserActivities = 0",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System"
+  },
+  {
+   "id": "usr-privacy-subscribedcontent-353698enabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Shows suggestions in the Windows 10 Timeline feature",
+   "ranges": [
+    [
+     2540,
+     2540
+    ]
+   ],
+   "kind": "reg",
+   "order": 319,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SubscribedContent-353698Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-privacy-isdevicesearchhistoryenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Improves search results by allowing Windows Search to store your search history locally on this device (Does not clear existing history)",
+   "ranges": [
+    [
+     2541,
+     2541
+    ]
+   ],
+   "kind": "reg",
+   "order": 320,
+   "reg": "CurrentVersion\\SearchSettings\\IsDeviceSearchHistoryEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings"
+  },
+  {
+   "id": "usr-privacy-isdynamicsearchboxenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "See content suggestions in search",
+   "ranges": [
+    [
+     2542,
+     2542
+    ]
+   ],
+   "kind": "reg",
+   "order": 321,
+   "reg": "CurrentVersion\\SearchSettings\\IsDynamicSearchBoxEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings"
+  },
+  {
+   "id": "usr-privacy-ismsacloudsearchenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Allow Windows Search to show results from apps and services that you are signed in to with your Microsoft account",
+   "ranges": [
+    [
+     2543,
+     2543
+    ]
+   ],
+   "kind": "reg",
+   "order": 322,
+   "reg": "CurrentVersion\\SearchSettings\\IsMSACloudSearchEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings"
+  },
+  {
+   "id": "usr-privacy-isaadcloudsearchenabled",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Allow Windows Search to show results from apps and services that you are signed in to with your work or school account",
+   "ranges": [
+    [
+     2544,
+     2544
+    ]
+   ],
+   "kind": "reg",
+   "order": 323,
+   "reg": "CurrentVersion\\SearchSettings\\IsAADCloudSearchEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings"
+  },
+  {
+   "id": "usr-privacy-allowcortana",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Enables Microsoft's Cortana virtual assistant for voice commands and searches",
+   "ranges": [
+    [
+     2545,
+     2545
+    ]
+   ],
+   "kind": "reg",
+   "order": 324,
+   "reg": "Windows\\Windows Search\\AllowCortana = 0",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search"
+  },
+  {
+   "id": "usr-privacy-disablelocation",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Allows Windows and apps to access your device location for location-based features",
+   "ranges": [
+    [
+     2546,
+     2546
+    ]
+   ],
+   "kind": "reg",
+   "order": 325,
+   "reg": "Windows\\LocationAndSensors\\DisableLocation = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\LocationAndSensors"
+  },
+  {
+   "id": "usr-privacy-kfmblockoptin",
+   "group": "privacy",
+   "scope": "usr",
+   "label": "Prevents OneDrive from automatically backing up important folders (Documents, Pictures, Desktop, etc.)",
+   "ranges": [
+    [
+     2547,
+     2547
+    ]
+   ],
+   "kind": "reg",
+   "order": 326,
+   "reg": "Microsoft\\OneDrive\\KFMBlockOptIn = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\OneDrive"
+  },
+  {
+   "id": "usr-sound-userduckingpreference",
+   "group": "sound",
+   "scope": "usr",
+   "label": "Automatically lower volume of media and apps when Windows detects communication activity",
+   "ranges": [
+    [
+     2553,
+     2553
+    ]
+   ],
+   "kind": "reg",
+   "order": 327,
+   "reg": "Multimedia\\Audio\\UserDuckingPreference = 3",
+   "path": "HKCU:\\Software\\Microsoft\\Multimedia\\Audio"
+  },
+  {
+   "id": "usr-sound-duckaudio",
+   "group": "sound",
+   "scope": "usr",
+   "label": "Allow Narrator to automatically lower the volume of other applications when it speaks",
+   "ranges": [
+    [
+     2554,
+     2554
+    ]
+   ],
+   "kind": "reg",
+   "order": 328,
+   "reg": "Narrator\\NoRoam\\DuckAudio = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Narrator\\NoRoam"
+  },
+  {
+   "id": "usr-sound-sound-on-activation",
+   "group": "sound",
+   "scope": "usr",
+   "label": "Play sounds when accessibility features like StickyKeys or FilterKeys are activated",
+   "ranges": [
+    [
+     2555,
+     2555
+    ]
+   ],
+   "kind": "reg",
+   "order": 329,
+   "reg": "Control Panel\\Accessibility\\Sound on Activation = 0",
+   "path": "HKCU:\\Control Panel\\Accessibility"
+  },
+  {
+   "id": "usr-sound-warning-sounds",
+   "group": "sound",
+   "scope": "usr",
+   "label": "Play warning sounds when attempting to activate accessibility features or when accessibility-related events occur",
+   "ranges": [
+    [
+     2556,
+     2556
+    ]
+   ],
+   "kind": "reg",
+   "order": 330,
+   "reg": "Control Panel\\Accessibility\\Warning Sounds = 0",
+   "path": "HKCU:\\Control Panel\\Accessibility"
+  },
+  {
+   "id": "usr-wupdate-noautoupdate",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2562,
+     2562
+    ]
+   ],
+   "kind": "reg",
+   "order": 331,
+   "reg": "remove NoAutoUpdate",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "usr-wupdate-auoptions",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2563,
+     2563
+    ]
+   ],
+   "kind": "reg",
+   "order": 332,
+   "reg": "WindowsUpdate\\AU\\AUOptions = 2",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "usr-wupdate-noaushutdownoption",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2564,
+     2564
+    ]
+   ],
+   "kind": "reg",
+   "order": 333,
+   "reg": "remove NoAUShutdownOption",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "usr-wupdate-alwaysautorebootatscheduledtime",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2565,
+     2565
+    ]
+   ],
+   "kind": "reg",
+   "order": 334,
+   "reg": "remove AlwaysAutoRebootAtScheduledTime",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "usr-wupdate-autoinstallminorupdates",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2566,
+     2566
+    ]
+   ],
+   "kind": "reg",
+   "order": 335,
+   "reg": "remove AutoInstallMinorUpdates",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "usr-wupdate-usewuserver",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Control how Windows updates are installed on your system",
+   "ranges": [
+    [
+     2567,
+     2567
+    ]
+   ],
+   "kind": "reg",
+   "order": 336,
+   "reg": "remove UseWUServer",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "usr-wupdate-dodownloadmode",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Share downloaded updates with other PCs on your network or the internet to reduce bandwidth usage",
+   "ranges": [
+    [
+     2568,
+     2568
+    ]
+   ],
+   "kind": "reg",
+   "order": 337,
+   "reg": "Windows\\DeliveryOptimization\\DODownloadMode = 99",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization"
+  },
+  {
+   "id": "usr-wupdate-noautorebootwithloggedonusers",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Prevents automatic restarts after installing updates when users are logged on",
+   "ranges": [
+    [
+     2569,
+     2569
+    ]
+   ],
+   "kind": "reg",
+   "order": 338,
+   "reg": "WindowsUpdate\\AU\\NoAutoRebootWithLoggedOnUsers = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU"
+  },
+  {
+   "id": "usr-wupdate-setupdatenotificationlevel",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Show or hide notifications about available updates and update progress",
+   "ranges": [
+    [
+     2570,
+     2570
+    ]
+   ],
+   "kind": "reg",
+   "order": 339,
+   "reg": "Windows\\WindowsUpdate\\SetUpdateNotificationLevel = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate"
+  },
+  {
+   "id": "usr-wupdate-excludewudriversinqualityupdate",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Prevent Windows from automatically downloading and installing hardware driver updates",
+   "ranges": [
+    [
+     2571,
+     2571
+    ]
+   ],
+   "kind": "reg",
+   "order": 340,
+   "reg": "Windows\\WindowsUpdate\\ExcludeWUDriversInQualityUpdate = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate"
+  },
+  {
+   "id": "usr-wupdate-autodownload",
+   "group": "wupdate",
+   "scope": "usr",
+   "label": "Automatically download and install updates for apps from the Microsoft Store",
+   "ranges": [
+    [
+     2572,
+     2572
+    ]
+   ],
+   "kind": "reg",
+   "order": 341,
+   "reg": "Microsoft\\WindowsStore\\AutoDownload = 2",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\WindowsStore"
+  },
+  {
+   "id": "usr-explorer-link",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Prevents Windows from appending '- Shortcut' text to newly created shortcut file names",
+   "ranges": [
+    [
+     2578,
+     2578
+    ]
+   ],
+   "kind": "reg",
+   "order": 342,
+   "reg": "remove link",
+   "path": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer"
+  },
+  {
+   "id": "usr-explorer-inprocserver32",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Use the Windows 10-style right-click menu with all options visible instead of the simplified Windows 11 menu",
+   "ranges": [
+    [
+     2579,
+     2579
+    ]
+   ],
+   "kind": "reg",
+   "order": 343,
+   "reg": "cria chave",
+   "path": "HKCU:\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32"
+  },
+  {
+   "id": "usr-explorer-default",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Use the Windows 10-style right-click menu with all options visible instead of the simplified Windows 11 menu",
+   "ranges": [
+    [
+     2580,
+     2580
+    ]
+   ],
+   "kind": "reg",
+   "order": 344,
+   "reg": "{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32\\(Default) = ",
+   "path": "HKCU:\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32"
+  },
+  {
+   "id": "usr-explorer-ambientlightingenabled",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Allow Windows Dynamic Lighting to control ambient RGB effects on compatible devices",
+   "ranges": [
+    [
+     2663,
+     2663
+    ]
+   ],
+   "kind": "reg",
+   "order": 345,
+   "reg": "Microsoft\\Lighting\\AmbientLightingEnabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Lighting"
+  },
+  {
+   "id": "usr-explorer-controlledbyforegroundapp",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Allow compatible apps to control device lighting effects",
+   "ranges": [
+    [
+     2664,
+     2664
+    ]
+   ],
+   "kind": "reg",
+   "order": 346,
+   "reg": "Microsoft\\Lighting\\ControlledByForegroundApp = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Lighting"
+  },
+  {
+   "id": "usr-explorer-legacydefaultprintermode",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Prevents Windows from automatically changing your default printer based on location or last used printer",
+   "ranges": [
+    [
+     2665,
+     2665
+    ]
+   ],
+   "kind": "reg",
+   "order": 347,
+   "reg": "CurrentVersion\\Windows\\LegacyDefaultPrinterMode = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+   "id": "usr-explorer-launchto",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Choose what happens when File Explorer is opened",
+   "ranges": [
+    [
+     2666,
+     2666
+    ]
+   ],
+   "kind": "reg",
+   "order": 348,
+   "reg": "Explorer\\Advanced\\LaunchTo = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-settings",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Choose whether each folder opens in the same window or in its own window",
+   "ranges": [
+    [
+     2667,
+     2667
+    ]
+   ],
+   "kind": "reg",
+   "order": 349,
+   "reg": "Settings (bit/byte) em CabinetState",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\CabinetState"
+  },
+  {
+   "id": "usr-explorer-shellstate",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Choose whether to open files and folders with a single click (like web links) or double-click (traditional)",
+   "ranges": [
+    [
+     2668,
+     2668
+    ]
+   ],
+   "kind": "reg",
+   "order": 350,
+   "reg": "ShellState (bit/byte) em Explorer",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer"
+  },
+  {
+   "id": "usr-explorer-iconunderline",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Choose whether to open files and folders with a single click (like web links) or double-click (traditional)",
+   "ranges": [
+    [
+     2669,
+     2669
+    ]
+   ],
+   "kind": "reg",
+   "order": 351,
+   "reg": "CurrentVersion\\Explorer\\IconUnderline = 3",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer"
+  },
+  {
+   "id": "usr-explorer-showrecent",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays recently accessed files and recommendations in Quick Access",
+   "ranges": [
+    [
+     2670,
+     2670
+    ]
+   ],
+   "kind": "reg",
+   "order": 352,
+   "reg": "CurrentVersion\\Explorer\\ShowRecent = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer"
+  },
+  {
+   "id": "usr-explorer-showrecommendations",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays recently accessed files and recommendations in Quick Access",
+   "ranges": [
+    [
+     2671,
+     2671
+    ]
+   ],
+   "kind": "reg",
+   "order": 353,
+   "reg": "CurrentVersion\\Explorer\\ShowRecommendations = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer"
+  },
+  {
+   "id": "usr-explorer-showfrequent",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays your most accessed folders in Quick Access section",
+   "ranges": [
+    [
+     2672,
+     2672
+    ]
+   ],
+   "kind": "reg",
+   "order": 354,
+   "reg": "CurrentVersion\\Explorer\\ShowFrequent = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer"
+  },
+  {
+   "id": "usr-explorer-showcloudfilesinquickaccess",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays cloud files from your Office.com account in Quick Access",
+   "ranges": [
+    [
+     2673,
+     2673
+    ]
+   ],
+   "kind": "reg",
+   "order": 355,
+   "reg": "CurrentVersion\\Explorer\\ShowCloudFilesInQuickAccess = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer"
+  },
+  {
+   "id": "usr-explorer-iconsonly",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays generic file icons instead of image/document previews",
+   "ranges": [
+    [
+     2674,
+     2674
+    ]
+   ],
+   "kind": "reg",
+   "order": 356,
+   "reg": "Explorer\\Advanced\\IconsOnly = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-alwaysshowmenus",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Shows the Menu bar (File, Edit etc.) on all windows that support it",
+   "ranges": [
+    [
+     2675,
+     2675
+    ]
+   ],
+   "kind": "reg",
+   "order": 357,
+   "reg": "Explorer\\Advanced\\AlwaysShowMenus = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-usecompactmode",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Reduces vertical spacing between files and folders for denser view",
+   "ranges": [
+    [
+     2676,
+     2676
+    ]
+   ],
+   "kind": "reg",
+   "order": 358,
+   "reg": "Explorer\\Advanced\\UseCompactMode = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-showtypeoverlay",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Shows file type icon overlay on bottom-right corner of thumbnail previews",
+   "ranges": [
+    [
+     2677,
+     2677
+    ]
+   ],
+   "kind": "reg",
+   "order": 359,
+   "reg": "Explorer\\Advanced\\ShowTypeOverlay = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-foldercontentsinfotip",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Shows total size and file count when hovering over folders",
+   "ranges": [
+    [
+     2678,
+     2678
+    ]
+   ],
+   "kind": "reg",
+   "order": 360,
+   "reg": "Explorer\\Advanced\\FolderContentsInfoTip = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-fullpath",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Shows complete directory path in window title instead of folder name only",
+   "ranges": [
+    [
+     2679,
+     2679
+    ]
+   ],
+   "kind": "reg",
+   "order": 361,
+   "reg": "Explorer\\CabinetState\\FullPath = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\CabinetState"
+  },
+  {
+   "id": "usr-explorer-hidden",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays items with the hidden attribute set",
+   "ranges": [
+    [
+     2680,
+     2680
+    ]
+   ],
+   "kind": "reg",
+   "order": 362,
+   "reg": "Explorer\\Advanced\\Hidden = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-hidedriveswithnomedia",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Hides drives with no media inserted like empty card readers or optical drives",
+   "ranges": [
+    [
+     2681,
+     2681
+    ]
+   ],
+   "kind": "reg",
+   "order": 363,
+   "reg": "Explorer\\Advanced\\HideDrivesWithNoMedia = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-hidefileext",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays file type extensions (like .txt, .pdf) after file names",
+   "ranges": [
+    [
+     2682,
+     2682
+    ]
+   ],
+   "kind": "reg",
+   "order": 364,
+   "reg": "Explorer\\Advanced\\HideFileExt = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-regcontent-explorer-enable-photo-viewer",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Restore the legacy Windows Photo Viewer and set it as the default program for common image file formats",
+   "ranges": [
+    [
+     2683,
+     2730
+    ]
+   ],
+   "kind": "regblock",
+   "order": 365,
+   "reg": "importa .reg"
+  },
+  {
+   "id": "usr-explorer-hidemergeconflicts",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Automatically merges folders with same name without confirmation dialog",
+   "ranges": [
+    [
+     2732,
+     2732
+    ]
+   ],
+   "kind": "reg",
+   "order": 366,
+   "reg": "Explorer\\Advanced\\HideMergeConflicts = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-showsuperhidden",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays system files marked with the SuperHidden attribute",
+   "ranges": [
+    [
+     2733,
+     2733
+    ]
+   ],
+   "kind": "reg",
+   "order": 367,
+   "reg": "Explorer\\Advanced\\ShowSuperHidden = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-separateprocess",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Runs each Explorer window in its own process to prevent crashes affecting all windows",
+   "ranges": [
+    [
+     2734,
+     2734
+    ]
+   ],
+   "kind": "reg",
+   "order": 368,
+   "reg": "Explorer\\Advanced\\SeparateProcess = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-persistbrowsers",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Reopens Explorer windows that were open when you last shut down or logged off",
+   "ranges": [
+    [
+     2735,
+     2735
+    ]
+   ],
+   "kind": "reg",
+   "order": 369,
+   "reg": "Explorer\\Advanced\\PersistBrowsers = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-showdrivelettersfirst",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays drive letters (C:, D:) before drive names in This PC",
+   "ranges": [
+    [
+     2736,
+     2736
+    ]
+   ],
+   "kind": "reg",
+   "order": 370,
+   "reg": "Explorer\\Advanced\\ShowDriveLettersFirst = 4",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-showencryptcompressedcolor",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays encrypted files in green and compressed files in blue",
+   "ranges": [
+    [
+     2737,
+     2737
+    ]
+   ],
+   "kind": "reg",
+   "order": 371,
+   "reg": "Explorer\\Advanced\\ShowEncryptCompressedColor = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-showinfotip",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays tooltip with item details when hovering over files and folders",
+   "ranges": [
+    [
+     2738,
+     2738
+    ]
+   ],
+   "kind": "reg",
+   "order": 372,
+   "reg": "Explorer\\Advanced\\ShowInfoTip = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-showpreviewhandlers",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Enables file content preview when selecting files in Explorer",
+   "ranges": [
+    [
+     2739,
+     2739
+    ]
+   ],
+   "kind": "reg",
+   "order": 373,
+   "reg": "Explorer\\Advanced\\ShowPreviewHandlers = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-showstatusbar",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays bar at bottom showing item count and selected file sizes",
+   "ranges": [
+    [
+     2740,
+     2740
+    ]
+   ],
+   "kind": "reg",
+   "order": 374,
+   "reg": "Explorer\\Advanced\\ShowStatusBar = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-showsyncprovidernotifications",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays cloud sync status notifications from OneDrive and other sync providers",
+   "ranges": [
+    [
+     2741,
+     2741
+    ]
+   ],
+   "kind": "reg",
+   "order": 375,
+   "reg": "Explorer\\Advanced\\ShowSyncProviderNotifications = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-autocheckselect",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Adds checkboxes next to items for easier multi-selection",
+   "ranges": [
+    [
+     2742,
+     2742
+    ]
+   ],
+   "kind": "reg",
+   "order": 376,
+   "reg": "Explorer\\Advanced\\AutoCheckSelect = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-sharingwizardon",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Shows simplified sharing dialog instead of advanced security permissions",
+   "ranges": [
+    [
+     2743,
+     2743
+    ]
+   ],
+   "kind": "reg",
+   "order": 377,
+   "reg": "Explorer\\Advanced\\SharingWizardOn = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-typeahead",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Chooses whether typing selects matching items or searches automatically",
+   "ranges": [
+    [
+     2744,
+     2744
+    ]
+   ],
+   "kind": "reg",
+   "order": 378,
+   "reg": "Explorer\\Advanced\\TypeAhead = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-navpaneshowallcloudstates",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Shows cloud sync status icons for OneDrive files in navigation pane",
+   "ranges": [
+    [
+     2745,
+     2745
+    ]
+   ],
+   "kind": "reg",
+   "order": 379,
+   "reg": "Explorer\\Advanced\\NavPaneShowAllCloudStates = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-navpaneexpandtocurrentfolder",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Automatically expands navigation tree to highlight current folder location",
+   "ranges": [
+    [
+     2746,
+     2746
+    ]
+   ],
+   "kind": "reg",
+   "order": 380,
+   "reg": "Explorer\\Advanced\\NavPaneExpandToCurrentFolder = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-navpaneshowallfolders",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Shows all folders in the navigation pane",
+   "ranges": [
+    [
+     2747,
+     2747
+    ]
+   ],
+   "kind": "reg",
+   "order": 381,
+   "reg": "Explorer\\Advanced\\NavPaneShowAllFolders = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-explorer-system-ispinnedtonamespacetree",
+   "group": "explorer",
+   "scope": "usr",
+   "label": "Displays Libraries container grouping Documents, Music, Pictures, and Videos",
+   "ranges": [
+    [
+     2748,
+     2748
+    ]
+   ],
+   "kind": "reg",
+   "order": 382,
+   "reg": "CLSID\\{031E4825-7B94-4dc3-B131-E946B44C8DD5}\\System.IsPinnedToNameSpaceTree = 0",
+   "path": "HKCU:\\Software\\Classes\\CLSID\\{031E4825-7B94-4dc3-B131-E946B44C8DD5}"
+  },
+  {
+   "id": "usr-start-start-layout",
+   "group": "start",
+   "scope": "usr",
+   "label": "Choose whether the Start Menu shows more pinned apps, more recommendations, or a balanced default layout",
+   "ranges": [
+    [
+     2754,
+     2754
+    ]
+   ],
+   "kind": "reg",
+   "order": 383,
+   "reg": "Explorer\\Advanced\\Start_Layout = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-start-hiderecommendedsection",
+   "group": "start",
+   "scope": "usr",
+   "label": "Show or hide the lower section that displays recently opened files and suggested apps",
+   "ranges": [
+    [
+     2755,
+     2755
+    ]
+   ],
+   "kind": "reg",
+   "order": 384,
+   "reg": "Windows\\Explorer\\HideRecommendedSection = 1",
+   "path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Explorer"
+  },
+  {
+   "id": "usr-start-showallpinslist",
+   "group": "start",
+   "scope": "usr",
+   "label": "Automatically expand to show all pinned apps instead of requiring you to click 'All apps'",
+   "ranges": [
+    [
+     2756,
+     2756
+    ]
+   ],
+   "kind": "reg",
+   "order": 385,
+   "reg": "CurrentVersion\\Start\\ShowAllPinsList = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Start"
+  },
+  {
+   "id": "usr-start-showrecentlist",
+   "group": "start",
+   "scope": "usr",
+   "label": "Display a list of recently installed applications at the top of the All Apps list",
+   "ranges": [
+    [
+     2757,
+     2757
+    ]
+   ],
+   "kind": "reg",
+   "order": 386,
+   "reg": "CurrentVersion\\Start\\ShowRecentList = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Start"
+  },
+  {
+   "id": "usr-start-showfrequentlist",
+   "group": "start",
+   "scope": "usr",
+   "label": "Display your frequently launched applications at the top of the All Apps list for quick access",
+   "ranges": [
+    [
+     2758,
+     2758
+    ]
+   ],
+   "kind": "reg",
+   "order": 387,
+   "reg": "CurrentVersion\\Start\\ShowFrequentList = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Start"
+  },
+  {
+   "id": "usr-start-start-trackprogs",
+   "group": "start",
+   "scope": "usr",
+   "label": "Display your frequently launched applications at the top of the All Apps list for quick access",
+   "ranges": [
+    [
+     2759,
+     2759
+    ]
+   ],
+   "kind": "reg",
+   "order": 388,
+   "reg": "Explorer\\Advanced\\Start_TrackProgs = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-start-subscribedcontent-338388enabled",
+   "group": "start",
+   "scope": "usr",
+   "label": "Display app suggestions and promotional content from the Microsoft Store in the Start Menu",
+   "ranges": [
+    [
+     2760,
+     2760
+    ]
+   ],
+   "kind": "reg",
+   "order": 389,
+   "reg": "CurrentVersion\\ContentDeliveryManager\\SubscribedContent-338388Enabled = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager"
+  },
+  {
+   "id": "usr-start-start-trackdocs",
+   "group": "start",
+   "scope": "usr",
+   "label": "Display your recently opened documents and files in the Start Menu's Recommended section for quick access",
+   "ranges": [
+    [
+     2761,
+     2761
+    ]
+   ],
+   "kind": "reg",
+   "order": 390,
+   "reg": "Explorer\\Advanced\\Start_TrackDocs = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-start-start-irisrecommendations",
+   "group": "start",
+   "scope": "usr",
+   "label": "Display personalized suggestions from Windows for tips, app shortcuts, and Microsoft Store apps in the Recommended section",
+   "ranges": [
+    [
+     2762,
+     2762
+    ]
+   ],
+   "kind": "reg",
+   "order": 391,
+   "reg": "Explorer\\Advanced\\Start_IrisRecommendations = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-start-start-accountnotifications",
+   "group": "start",
+   "scope": "usr",
+   "label": "Display notifications about Microsoft account sign-in, sync status, and account-related suggestions",
+   "ranges": [
+    [
+     2763,
+     2763
+    ]
+   ],
+   "kind": "reg",
+   "order": 392,
+   "reg": "Explorer\\Advanced\\Start_AccountNotifications = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-start-disablesearchboxsuggestions",
+   "group": "start",
+   "scope": "usr",
+   "label": "Prevent web results from Bing from appearing when searching in the Start Menu, showing only local files and apps",
+   "ranges": [
+    [
+     2764,
+     2764
+    ]
+   ],
+   "kind": "reg",
+   "order": 393,
+   "reg": "Windows\\Explorer\\DisableSearchBoxSuggestions = 1",
+   "path": "HKCU:\\Software\\Policies\\Microsoft\\Windows\\Explorer"
+  },
+  {
+   "id": "usr-taskbar-searchboxtaskbarmode",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Choose how the Windows search appears on your taskbar: hidden, icon only, icon with label, or full search box",
+   "ranges": [
+    [
+     2770,
+     2770
+    ]
+   ],
+   "kind": "reg",
+   "order": 394,
+   "reg": "CurrentVersion\\Search\\SearchboxTaskbarMode = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Search"
+  },
+  {
+   "id": "usr-taskbar-searchboxtaskbarmode-2",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Choose how the Windows search appears on your taskbar: hidden, icon only, or full search box",
+   "ranges": [
+    [
+     2771,
+     2771
+    ]
+   ],
+   "kind": "reg",
+   "order": 395,
+   "reg": "CurrentVersion\\Search\\SearchboxTaskbarMode = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Search"
+  },
+  {
+   "id": "usr-taskbar-taskbaral",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Align taskbar icons to the left (classic Windows style) or center (Windows 11 default)",
+   "ranges": [
+    [
+     2772,
+     2772
+    ]
+   ],
+   "kind": "reg",
+   "order": 396,
+   "reg": "Explorer\\Advanced\\TaskbarAl = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-taskbar-hidescameetnow",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Controls Meet Now button visibility in the system tray",
+   "ranges": [
+    [
+     2773,
+     2773
+    ]
+   ],
+   "kind": "reg",
+   "order": 397,
+   "reg": "Windows\\Explorer\\HideSCAMeetNow = 1",
+   "path": "HKCU:\\Software\\Policies\\Microsoft\\Windows\\Explorer"
+  },
+  {
+   "id": "usr-taskbar-hidescameetnow-2",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Controls Meet Now button visibility in the system tray",
+   "ranges": [
+    [
+     2774,
+     2774
+    ]
+   ],
+   "kind": "reg",
+   "order": 398,
+   "reg": "Policies\\Explorer\\HideSCAMeetNow = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer"
+  },
+  {
+   "id": "usr-taskbar-enableautotray",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Show all system tray icons directly on the taskbar instead of hiding them in the overflow menu (up arrow)",
+   "ranges": [
+    [
+     2775,
+     2775
+    ]
+   ],
+   "kind": "reg",
+   "order": 399,
+   "reg": "CurrentVersion\\Explorer\\EnableAutoTray = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer"
+  },
+  {
+   "id": "usr-taskbar-showtaskviewbutton",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Show the Task View button for managing virtual desktops and viewing all open windows at once",
+   "ranges": [
+    [
+     2776,
+     2776
+    ]
+   ],
+   "kind": "reg",
+   "order": 400,
+   "reg": "Explorer\\Advanced\\ShowTaskViewButton = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-taskbar-allownewsandinterests",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Show the Widgets button that displays personalized news, weather, calendar, and other information",
+   "ranges": [
+    [
+     2777,
+     2777
+    ]
+   ],
+   "kind": "reg",
+   "order": 401,
+   "reg": "Microsoft\\Dsh\\AllowNewsAndInterests = 0",
+   "path": "HKCU:\\Software\\Policies\\Microsoft\\Dsh"
+  },
+  {
+   "id": "usr-taskbar-enablefeeds",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Show the News and Interests widget that displays headlines, weather, stocks, and other personalized content",
+   "ranges": [
+    [
+     2778,
+     2778
+    ]
+   ],
+   "kind": "reg",
+   "order": 402,
+   "reg": "Windows\\Windows Feeds\\EnableFeeds = 0",
+   "path": "HKCU:\\Software\\Policies\\Microsoft\\Windows\\Windows Feeds"
+  },
+  {
+   "id": "usr-taskbar-taskbaracrylicopacity",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Controls the transparency of the taskbar",
+   "ranges": [
+    [
+     2779,
+     2779
+    ]
+   ],
+   "kind": "reg",
+   "order": 403,
+   "reg": "Explorer\\Advanced\\TaskbarAcrylicOpacity = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-taskbar-taskbarsmallicons",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Reduce the height of the taskbar by using smaller icons, giving you more screen space",
+   "ranges": [
+    [
+     2780,
+     2780
+    ]
+   ],
+   "kind": "reg",
+   "order": 404,
+   "reg": "Explorer\\Advanced\\TaskbarSmallIcons = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+   "id": "usr-taskbar-taskbarendtask",
+   "group": "taskbar",
+   "scope": "usr",
+   "label": "Adds an 'End Task' option when right-clicking applications on the taskbar for quick termination",
+   "ranges": [
+    [
+     2781,
+     2781
+    ]
+   ],
+   "kind": "reg",
+   "order": 405,
+   "reg": "Advanced\\TaskbarDeveloperSettings\\TaskbarEndTask = 1",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\\TaskbarDeveloperSettings"
+  },
+  {
+   "id": "usr-theme-appsuselighttheme",
+   "group": "theme",
+   "scope": "usr",
+   "label": "Choose between Light and Dark mode for Windows and apps",
+   "ranges": [
+    [
+     2787,
+     2787
+    ]
+   ],
+   "kind": "reg",
+   "order": 406,
+   "reg": "Themes\\Personalize\\AppsUseLightTheme = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize"
+  },
+  {
+   "id": "usr-theme-systemuseslighttheme",
+   "group": "theme",
+   "scope": "usr",
+   "label": "Choose between Light and Dark mode for Windows and apps",
+   "ranges": [
+    [
+     2788,
+     2788
+    ]
+   ],
+   "kind": "reg",
+   "order": 407,
+   "reg": "Themes\\Personalize\\SystemUsesLightTheme = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize"
+  },
+  {
+   "id": "usr-theme-enabletransparency",
+   "group": "theme",
+   "scope": "usr",
+   "label": "Enable translucent effects for the Start Menu, taskbar, and other Windows interface elements",
+   "ranges": [
+    [
+     2789,
+     2789
+    ]
+   ],
+   "kind": "reg",
+   "order": 408,
+   "reg": "Themes\\Personalize\\EnableTransparency = 0",
+   "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize"
+  },
+  {
+   "id": "task-microsoft-compatibility-appraiser",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Collects program compatibility telemetry for Windows upgrades. Works alongside the Connected User Experiences and Telemetry Service. Disable to reduce telemetry and background system activity",
+   "ranges": [
+    [
+     2009,
+     2009
+    ]
+   ],
+   "kind": "list",
+   "order": 409,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Application Experience\\Microsoft Compatibility Appraiser"
+  },
+  {
+   "id": "task-programdataupdater",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Updates the program compatibility database with information about installed applications. Disable to reduce telemetry collection",
+   "ranges": [
+    [
+     2010,
+     2010
+    ]
+   ],
+   "kind": "list",
+   "order": 410,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Application Experience\\ProgramDataUpdater"
+  },
+  {
+   "id": "task-consolidator",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Consolidates and uploads usage data as part of the Customer Experience Improvement Program. Works with the Connected User Experiences and Telemetry Service. Disable to improve privacy",
+   "ranges": [
+    [
+     2011,
+     2011
+    ]
+   ],
+   "kind": "list",
+   "order": 411,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator"
+  },
+  {
+   "id": "task-usbceip",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Collects USB device-related telemetry for the Customer Experience Improvement Program. Disable to reduce telemetry",
+   "ranges": [
+    [
+     2012,
+     2012
+    ]
+   ],
+   "kind": "list",
+   "order": 412,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\UsbCeip"
+  },
+  {
+   "id": "task-microsoft-windows-diskdiagnosticdatacollector",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Collects disk diagnostic information and S.M.A.R.T. data for Microsoft. Disable to reduce background disk activity and telemetry",
+   "ranges": [
+    [
+     2013,
+     2013
+    ]
+   ],
+   "kind": "list",
+   "order": 413,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\DiskDiagnostic\\Microsoft-Windows-DiskDiagnosticDataCollector"
+  },
+  {
+   "id": "task-dmclient",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Collects feedback and diagnostic data for Microsoft. Disable to improve privacy and reduce telemetry",
+   "ranges": [
+    [
+     2014,
+     2014
+    ]
+   ],
+   "kind": "list",
+   "order": 414,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Feedback\\Siuf\\DmClient"
+  },
+  {
+   "id": "task-dmclientonscenariodownload",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Downloads feedback scenarios and configuration data from Microsoft. Disable to reduce telemetry and network activity",
+   "ranges": [
+    [
+     2015,
+     2015
+    ]
+   ],
+   "kind": "list",
+   "order": 415,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Feedback\\Siuf\\DmClientOnScenarioDownload"
+  },
+  {
+   "id": "task-queuereporting",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Queues crash reports and error data to send to Microsoft. Works alongside the Windows Error Reporting Service. Disable both to prevent crash data collection",
+   "ranges": [
+    [
+     2016,
+     2016
+    ]
+   ],
+   "kind": "list",
+   "order": 416,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Windows Error Reporting\\QueueReporting"
+  },
+  {
+   "id": "task-sqm-tasks",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Collects software quality metrics and reliability data for Microsoft telemetry. Disable to improve privacy",
+   "ranges": [
+    [
+     2017,
+     2017
+    ]
+   ],
+   "kind": "list",
+   "order": 417,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\PI\\Sqm-Tasks"
+  },
+  {
+   "id": "task-marebackup",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Backs up Microsoft Assisted Recovery data. Disable to reduce background system activity",
+   "ranges": [
+    [
+     2018,
+     2018
+    ]
+   ],
+   "kind": "list",
+   "order": 418,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Application Experience\\MareBackup"
+  },
+  {
+   "id": "task-startupapptask",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Tracks and monitors startup applications for telemetry and diagnostics. Disable to reduce telemetry",
+   "ranges": [
+    [
+     2019,
+     2019
+    ]
+   ],
+   "kind": "list",
+   "order": 419,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Application Experience\\StartupAppTask"
+  },
+  {
+   "id": "task-pcapatchdbtask",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Updates the Program Compatibility Assistant database. Works with the Program Compatibility Assistant Service. Disable both to prevent compatibility checking",
+   "ranges": [
+    [
+     2020,
+     2020
+    ]
+   ],
+   "kind": "list",
+   "order": 420,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Application Experience\\PcaPatchDbTask"
+  },
+  {
+   "id": "task-mapsupdatetask",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Updates offline maps data for the Windows Maps app. Disable if you don't use the Maps app to save bandwidth and storage",
+   "ranges": [
+    [
+     2021,
+     2021
+    ]
+   ],
+   "kind": "list",
+   "order": 421,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Maps\\MapsUpdateTask"
+  },
+  {
+   "id": "task-proxy",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Performs disk checking operations and collects diagnostic data. Consider keeping enabled for disk health monitoring",
+   "ranges": [
+    [
+     2022,
+     2022
+    ]
+   ],
+   "kind": "list",
+   "order": 422,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Autochk\\Proxy"
+  },
+  {
+   "id": "task-familysafetymonitor",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Monitors family safety settings and usage. Disable if you don't use family safety features",
+   "ranges": [
+    [
+     2023,
+     2023
+    ]
+   ],
+   "kind": "list",
+   "order": 423,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Shell\\FamilySafetyMonitor"
+  },
+  {
+   "id": "task-analyzesystem",
+   "group": "tasks",
+   "scope": "sys",
+   "label": "Analyzes system power consumption and collects energy efficiency data. Disable to reduce telemetry and background analysis",
+   "ranges": [
+    [
+     2024,
+     2024
+    ]
+   ],
+   "kind": "list",
+   "order": 424,
+   "list": "tasks",
+   "reg": "\\Microsoft\\Windows\\Power Efficiency Diagnostics\\AnalyzeSystem"
+  },
+  {
+   "id": "start-layout",
+   "group": "start",
+   "scope": "sys",
+   "label": "Menu Iniciar limpo (sem apps fixados)",
+   "ranges": [
+    [
+     2304,
+     2346
+    ]
+   ],
+   "kind": "master",
+   "order": 425
+  },
+  {
+   "id": "usertask",
+   "group": "usertask",
+   "scope": "sys",
+   "label": "Aplicar ajustes de usuario (HKCU) no primeiro logon",
+   "ranges": [
+    [
+     2353,
+     2363
+    ]
+   ],
+   "kind": "master",
+   "order": 426
+  },
+  {
+   "id": "usr-wallpaper",
+   "group": "theme",
+   "scope": "usr",
+   "label": "Definir papel de parede padrao do Windows (claro/escuro)",
+   "ranges": [
+    [
+     2791,
+     2831
+    ]
+   ],
+   "kind": "master",
+   "order": 427
+  },
+  {
+   "id": "usr-reboot",
+   "group": "usertask",
+   "scope": "usr",
+   "label": "Reiniciar automaticamente apos aplicar os ajustes de usuario",
+   "ranges": [
+    [
+     2863,
+     2868
+    ]
+   ],
+   "kind": "master",
+   "order": 428
+  }
+ ]
+}

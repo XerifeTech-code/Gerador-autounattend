@@ -1,0 +1,293 @@
+Remover aplicativos (BloatRemoval)
+Remover Microsoft Edge (EdgeRemoval)
+Remover OneDrive (OneDriveRemoval)
+Criar atalho 'Install Winhance' na area de trabalho
+Criar e ativar o plano de energia 'Winhance Power Plan'
+Desativar a hibernacao (powercfg /hibernate off)
+Specifies the period of inactivity before Windows turns off the display
+Specifies the period of inactivity before Windows turns off the hard disk
+Allow or prevent Windows from rotating through multiple wallpaper images
+Balance wireless network performance with battery life by adjusting adapter power usage
+Specifies the period of inactivity before Windows puts the computer to sleep
+Allow scheduled tasks and applications to wake your computer from sleep
+Specifies the period of inactivity before Windows hibernates the computer
+Combines sleep and hibernate by saving your session to disk while staying in low-power mode for faster wake
+Set how long USB hubs wait idle before powering down to save energy
+Allow Windows to power down individual USB ports when devices are idle to save energy
+Control how aggressively USB 3.0 ports enter low-power states when devices are idle
+Choose what happens when you press the physical power button on your computer
+Choose what happens when you press the dedicated sleep button on your keyboard or computer
+Control power savings for PCIe devices like graphics cards, SSDs, and expansion cards
+Set the lowest CPU speed allowed as a percentage of maximum frequency
+Set the highest CPU speed allowed as a percentage of maximum frequency
+Choose whether to slow down the processor first (passive) or speed up fans first (active) when hot
+Control how aggressively your CPU boosts above base frequency for demanding tasks
+Control how quickly CPU ramps up speed when workload increases (for legacy non-HWP processors)
+Control how quickly CPU reduces speed when workload decreases (for legacy non-HWP processors)
+Set the minimum percentage of CPU cores that must remain active and responsive
+Set the maximum percentage of CPU cores allowed to be active (100% for best performance)
+Balance power efficiency and performance for modern CPUs with HWP (0 = max performance, 100 = max efficiency)
+Set CPU usage percentage that triggers speed increase (lower = more responsive, for legacy non-HWP CPUs)
+Set CPU usage percentage that triggers speed reduction (lower = maintains performance longer, for legacy non-HWP CPUs)
+Control whether your PC can sleep while streaming media to other devices on your network
+Prioritize smooth video playback over battery life when watching videos
+Balance video quality and power consumption during video playback
+Balance AMD laptop performance and battery life with quick power mode selection
+Allow apps to receive notifications, update data, and perform tasks even when not actively in use
+Compress unused memory pages to reduce RAM usage. On systems with plenty of RAM (16GB+), disabling can slightly reduce CPU overhead and improve performance
+Automatically free up disk space by removing temporary files, emptying the recycle bin, and managing downloads
+Configure how Windows allocates CPU time between foreground applications and background services
+Minimize background task interference by allocating more CPU time to your active game or multimedia application
+Give games higher CPU scheduling priority to dedicate more processor time to your game
+Assign high-priority scheduling category to ensure games receive preferential system resource allocation
+Give games higher GPU scheduling priority to improve graphics performance and frame rates
+Let your GPU manage its own memory and scheduling for reduced latency and improved performance
+Enable legacy NVIDIA image sharpening filter for enhanced visual clarity. Only works on older NVIDIA drivers; newer drivers should use NVIDIA Control Panel sharpening instead
+Disable network packet throttling to reduce latency and improve online gaming responsiveness
+Batch small network packets together before sending to improve efficiency. Disabling reduces latency for real-time online gaming but may slightly increase bandwidth usage
+Record gameplay clips and take screenshots using the Xbox Game Bar overlay. Disabling reduces CPU/GPU usage and can improve frame rates
+Reduce the startup timeout for Windows services from 60 to 30 seconds. This can speed up boot time slightly
+Preload frequently used applications into RAM for faster launch times. Automatic is recommended for HDDs, Manual or Disabled is preferred for SSDs
+Preload frequently used applications and boot files into memory to speed up launches. Generally recommended for HDDs not SSDs
+Indexes files and folders for faster search results. Disabling reduces background CPU and disk activity but makes Windows Search slower
+Manages print jobs sent to printers. If you don't use a printer, set to Manual or Disabled to free up system resources
+Sends usage data and diagnostics to Microsoft. Setting to Manual or Disabled reduces background network and CPU usage
+Monitors programs for compatibility issues and suggests fixes. Disabling prevents compatibility prompts and saves minor system resources
+Collects and sends crash data to Microsoft. Disabling prevents crash reporting, reduces network traffic, and improves privacy with minimal system impact
+Tracks your physical location for apps and services. Disabling improves privacy and prevents location tracking, but apps won't be able to use location features
+Controls device activity when in retail demo mode. Safe to disable for personal computers as it only serves retail display purposes
+Manages Windows Insider Program features and preview builds. Safe to disable if you're not participating in the Windows Insider Program
+Manages telephony state on the device. Safe to disable if you don't use phone connectivity features or make calls from your PC
+Provides wallet functionality for payment and NFC scenarios. Safe to disable if you don't use Microsoft Wallet features
+Enables smart card reader functionality for security authentication. Safe to disable if you don't use physical smart cards or card readers
+Provides access to downloaded maps for applications. Set to Manual to allow map access when needed while preventing unnecessary background activity
+Enables sending and receiving faxes. Safe to disable for most users as fax functionality is rarely used on modern systems
+Shares Windows Media Player libraries to other networked players and media devices. Safe to disable if you don't share media over your network
+Runs OpenXR applications on Windows Mixed Reality devices. Safe to disable if you don't use VR or AR headsets
+Provides ability to share internet connection with other devices. Set to Manual to keep functionality available while preventing unnecessary background activity
+Routes SMS messages according to rules. Safe to disable if you don't use SMS features on your PC
+Enables parental controls and family safety features. Safe to disable if you don't use parental control features
+Manages payments and Near Field Communication secure elements. Safe to disable if you don't use NFC payment features
+Verifies potential file system corruptions. Set to Manual to allow verification when needed while reducing background activity
+Manages VPN and dial-up connections. Set to Manual to reduce background activity while keeping VPN functionality available when needed.
+Automatically connects to remote networks when programs reference remote resources. Safe to disable if you don't use auto-connect VPN features
+Allows users to connect interactively to a remote computer. Set to Manual to reduce background activity while keeping Remote Desktop available.
+Manages Remote Desktop Services and Remote Desktop related configurations. Set to Manual to reduce background activity while keeping Remote Desktop available
+Allows local device redirection for Remote Desktop connections. Safe to disable if you don't need to share local devices during Remote Desktop sessions
+Transfers Windows Updates and downloads in the background. Setting to Manual allows updates to work while preventing constant background activity during gaming
+Provides authentication and authorization services for Xbox Live. Safe to disable if you don't use Xbox Game Pass, Microsoft Store games, or Xbox features
+Syncs game saves to Xbox Live cloud. Only needed for Xbox Game Pass and Microsoft Store games with cloud save features
+Supports Xbox Live multiplayer networking. Required for Xbox multiplayer gaming but not needed for Steam/Epic/other gaming platforms
+Enables fingerprint and facial recognition login via Windows Hello. Safe to disable on desktop systems without biometric hardware
+Enables touch keyboard and pen input functionality. Safe to disable on desktop systems without touchscreen or stylus
+Monitors various sensors like ambient light and orientation. Safe to disable on desktop systems without sensor hardware
+Delivers data from a variety of sensors to applications. Safe to disable on desktop systems without sensor hardware
+Show all notifications from Windows Security about threats, scans, and protection status
+Hibernate system state during shutdown for faster boot times (does not affect restart)
+Display the Hibernate option in the Start Menu power button menu
+Automatically reduces CPU performance for background processes to improve battery life and reduce heat generation
+Display the Lock option in the Start Menu power button menu
+Display the Sleep option in the Start Menu power button menu
+Controls UAC notification level and secure desktop behavior
+Blocks the 'Allow my organization to manage my device' and 'No, sign in to this app only' pop-up messages
+Prevents Windows from automatically encrypting your device with BitLocker without user consent
+Prevents sharing WiFi passwords with contacts and automatically connecting to suggested open hotspots
+Prevents Windows from running automatic system maintenance tasks during idle time
+Stops Windows from collecting and sending crash reports and error information to Microsoft
+Prevents others from connecting to your computer remotely to provide technical support. Disabling improves security by blocking external remote access
+Allows users to lock their computer using Windows+L, Start menu, or Ctrl+Alt+Del screen
+Windows generates a unique advertising ID that apps use to track your activity and deliver personalized ads based on your behavior across different apps
+Use your voice for apps using Microsoft's online speech recognition technology
+Send diagnostic data to Microsoft to help improve Windows and keep it secure
+Let Microsoft use your diagnostic data to show personalized tips, ads and recommendations
+Let Windows ask you to provide feedback on experiences in Windows
+Allows you to jump back into what you were doing with apps, docs, or other activities on startup
+Enables Microsoft's Cortana virtual assistant for voice commands and searches
+Allows Windows and apps to access your device location for location-based features
+Allow apps to have camera access
+Allow apps to have microphone access
+Allow apps to have account info access
+Allow apps to have app diagnostic access
+Prevents OneDrive from automatically backing up important folders (Documents, Pictures, Desktop, etc.)
+Play the Windows startup sound when your computer boots up
+Allow apps to listen and respond to voice commands like "Hey Cortana"
+Remember and apply the most recently used voice activation configuration
+Control how Windows updates are installed on your system
+Share downloaded updates with other PCs on your network or the internet to reduce bandwidth usage
+Be among the first to get the latest non-security updates, fixes, and improvements as they roll out
+Get Microsoft Office and other updates together with Windows updates
+Restart as soon as possible (even during active hours) to finish updating
+Prevents automatic restarts after installing updates when users are logged on
+Show or hide notifications about available updates and update progress
+Show notification when your device requires a restart to finish updating
+Allow Windows to download updates when using mobile hotspots or data-limited connections
+Prevent Windows from automatically downloading and installing hardware driver updates
+Automatically download and install updates for apps from the Microsoft Store
+Adds a right-click option to take ownership of files, folders, and drives with automatic permission elevation
+Adds a right-click menu option to quickly toggle file extension visibility in File Explorer (only visible on the Classic Context Menu or Show More Options Menu in Windows 11)
+Displays the Windows Terminal option when right-clicking folders and backgrounds in File Explorer
+Display the 3D Objects folder alongside Documents, Pictures, and other default folders
+Display the Home folder in the navigation pane as a shortcut to your user profile folder
+Display the Gallery folder in the navigation pane for quick access to all your photos and videos
+Enables support for file paths with up to 32,767 characters instead of the traditional 260-character limit
+Show or hide the lower section that displays recently opened files and suggested apps
+Prevent web results from Bing from appearing when searching in the Start Menu, showing only local files and apps
+Controls Meet Now button visibility in the system tray
+Show the Widgets button that displays personalized news, weather, calendar, and other information
+Show the News and Interests widget that displays headlines, weather, stocks, and other personalized content
+Optimize your PC for play by turning things off in the background
+Adjust cursor speed based on movement velocity (mouse acceleration). Most competitive gamers disable this for consistent aiming in FPS games
+Delay startup applications by 10 seconds after boot to improve initial system responsiveness. Windows becomes usable faster, but your startup apps take longer to load
+Search your entire file system instead of only indexed locations. This provides more complete results but is significantly slower than indexed search and increases disk activity
+Allow Windows to compress wallpapers to save disk space and improve performance. Only affects images in JPEG format.
+Add a brief delay before displaying menus, or show them instantly for faster navigation
+Show only traditional open windows in Alt+Tab instead of including Microsoft Edge tabs and other Windows suggestions
+Reduce latency and use advanced features in compatible games by using DirectX flip presentation model
+Enable VRR (G-Sync/FreeSync) optimizations for smoother gameplay on compatible monitors. Disable only if experiencing issues with VRR displays
+Allow Windows to optimize games running in fullscreen mode. Disabling can fix performance issues or stuttering in some older games that don't work well with borderless fullscreen optimization
+Enable visual effects managed by the Desktop Window Manager. Disabling may provide minor performance gains on older hardware but will break Aero effects
+Allow your Xbox/compatible controller to open Game Bar by pressing the Xbox button. Disable to prevent accidental Game Bar activation during gaming
+Show tips and hints about Game Bar features when opening the overlay. Disabling reduces distractions during gameplay
+Choose how Windows displays visual effects
+Enables animation effects for controls and UI elements
+Shows smooth animation when windows are minimized or maximized
+Controls taskbar animation effects for opening, closing, and switching windows
+Allows peeking at desktop when hovering over Show Desktop button
+Animates menus when they appear using fade or slide effects
+Animates tooltips when they appear using fade or slide effects
+Fades menu items after selection before closing the menu
+Saves thumbnail previews of taskbar windows for faster display
+Displays shadow effect underneath the mouse cursor
+Displays shadow effects underneath windows
+Displays image and document previews instead of generic file icons
+Display a semi-transparent selection box when dragging to select multiple files or items
+Displays window contents when dragging instead of just an outline
+Animates combo boxes when they open with a sliding effect
+Apply anti-aliasing to text for smoother, more readable fonts on screen
+Enables smooth scrolling in list boxes instead of jumping
+Add shadow effects behind desktop icon text to improve readability against backgrounds
+Enable the Win+Ctrl+Enter keyboard shortcut to quickly launch Windows Narrator screen reader
+Enable the keyboard shortcut to activate StickyKeys by pressing the Shift key five times
+Enable the keyboard shortcut to activate FilterKeys by holding the right Shift key for 8 seconds
+Enable the keyboard shortcut to activate ToggleKeys by holding Num Lock for 5 seconds, which plays sounds when Caps/Num/Scroll Lock are pressed
+Enable the keyboard shortcut to activate MouseKeys, which allows using the numeric keypad to control the mouse pointer
+Enable the keyboard shortcut to activate High Contrast mode by pressing Left Alt + Left Shift + Print Screen
+Get notifications from apps and other senders in Windows
+Play audio alerts when notifications arrive from apps and system senders
+Display toast notifications on the lock screen when your device is locked
+Display critical notifications like reminders and VoIP calls when your device is locked
+Display the notification bell icon in the system tray
+Show what's new and suggested after updates and when signed in
+Show suggestions to help you complete device setup and optimize Windows features
+Show helpful tips and suggestions while using Windows
+Display helpful suggestions in the Action Center and Notification Center
+Show notifications when apps request access to system capabilities and permissions
+Show notifications when apps are added to your Windows startup list
+Show notifications when apps attempt to access your location information
+Show notifications when daylight saving time changes occur
+Show notifications from the Security and Maintenance Action Center
+Controls all advertising, suggestions, and promotional content throughout Windows
+Allows Windows to deliver promotional content and automatically install suggested apps
+Enables promotional content subscriptions from Microsoft and partners throughout Windows
+Enables Windows feature management functionality for promotional features and automatic app installations
+Displays tips and notifications about Windows features as you use the operating system
+Prevents OEM manufacturers from automatically installing bloatware apps
+Prevents Microsoft from automatically installing suggested apps
+Disables tracking of whether pre-installed apps were ever enabled
+Prevents apps from being silently installed in the background
+Displays rotating Windows Spotlight images on your lock screen instead of a static background
+Displays fun facts, tips, and tricks as an overlay on your lock screen
+Enables slideshow option for lock screen background
+Allows websites to access your language preferences so they can automatically display content in your preferred language without requiring manual configuration on each site
+Windows records which apps you use most frequently to personalize your Start menu and improve search results, making your most-used apps more accessible
+Microsoft displays promotional content, tips, and feature suggestions within the Windows Settings app to help you discover new features and functionality
+Shows account notifications in the Settings app, including prompts to reauthenticate, backup your device, and manage subscriptions
+Allow Narrator to use Microsoft cloud services for features like intelligent image descriptions and enhanced voice models
+Allow Narrator to execute scripts for automation and custom functionality
+Uses your typing history and handwriting patterns to create a custom dictionary (turning off will clear all words in your custom dictionary)
+Send optional inking and typing diagnostic data to Microsoft
+Shows suggestions in the Windows 10 Timeline feature
+Improves search results by allowing Windows Search to store your search history locally on this device (Does not clear existing history)
+See content suggestions in search
+Allow Windows Search to show results from apps and services that you are signed in to with your Microsoft account
+Allow Windows Search to show results from apps and services that you are signed in to with your work or school account
+Automatically lower volume of media and apps when Windows detects communication activity
+Allow Narrator to automatically lower the volume of other applications when it speaks
+Play sounds when accessibility features like StickyKeys or FilterKeys are activated
+Play warning sounds when attempting to activate accessibility features or when accessibility-related events occur
+Prevents Windows from appending '- Shortcut' text to newly created shortcut file names
+Use the Windows 10-style right-click menu with all options visible instead of the simplified Windows 11 menu
+Allow Windows Dynamic Lighting to control ambient RGB effects on compatible devices
+Allow compatible apps to control device lighting effects
+Prevents Windows from automatically changing your default printer based on location or last used printer
+Choose what happens when File Explorer is opened
+Choose whether each folder opens in the same window or in its own window
+Choose whether to open files and folders with a single click (like web links) or double-click (traditional)
+Displays recently accessed files and recommendations in Quick Access
+Displays your most accessed folders in Quick Access section
+Displays cloud files from your Office.com account in Quick Access
+Displays generic file icons instead of image/document previews
+Shows the Menu bar (File, Edit etc.) on all windows that support it
+Reduces vertical spacing between files and folders for denser view
+Shows file type icon overlay on bottom-right corner of thumbnail previews
+Shows total size and file count when hovering over folders
+Shows complete directory path in window title instead of folder name only
+Displays items with the hidden attribute set
+Hides drives with no media inserted like empty card readers or optical drives
+Displays file type extensions (like .txt, .pdf) after file names
+Restore the legacy Windows Photo Viewer and set it as the default program for common image file formats
+Automatically merges folders with same name without confirmation dialog
+Displays system files marked with the SuperHidden attribute
+Runs each Explorer window in its own process to prevent crashes affecting all windows
+Reopens Explorer windows that were open when you last shut down or logged off
+Displays drive letters (C:, D:) before drive names in This PC
+Displays encrypted files in green and compressed files in blue
+Displays tooltip with item details when hovering over files and folders
+Enables file content preview when selecting files in Explorer
+Displays bar at bottom showing item count and selected file sizes
+Displays cloud sync status notifications from OneDrive and other sync providers
+Adds checkboxes next to items for easier multi-selection
+Shows simplified sharing dialog instead of advanced security permissions
+Chooses whether typing selects matching items or searches automatically
+Shows cloud sync status icons for OneDrive files in navigation pane
+Automatically expands navigation tree to highlight current folder location
+Shows all folders in the navigation pane
+Displays Libraries container grouping Documents, Music, Pictures, and Videos
+Choose whether the Start Menu shows more pinned apps, more recommendations, or a balanced default layout
+Automatically expand to show all pinned apps instead of requiring you to click 'All apps'
+Display a list of recently installed applications at the top of the All Apps list
+Display your frequently launched applications at the top of the All Apps list for quick access
+Display app suggestions and promotional content from the Microsoft Store in the Start Menu
+Display your recently opened documents and files in the Start Menu's Recommended section for quick access
+Display personalized suggestions from Windows for tips, app shortcuts, and Microsoft Store apps in the Recommended section
+Display notifications about Microsoft account sign-in, sync status, and account-related suggestions
+Choose how the Windows search appears on your taskbar: hidden, icon only, icon with label, or full search box
+Choose how the Windows search appears on your taskbar: hidden, icon only, or full search box
+Align taskbar icons to the left (classic Windows style) or center (Windows 11 default)
+Show all system tray icons directly on the taskbar instead of hiding them in the overflow menu (up arrow)
+Show the Task View button for managing virtual desktops and viewing all open windows at once
+Controls the transparency of the taskbar
+Reduce the height of the taskbar by using smaller icons, giving you more screen space
+Adds an 'End Task' option when right-clicking applications on the taskbar for quick termination
+Choose between Light and Dark mode for Windows and apps
+Enable translucent effects for the Start Menu, taskbar, and other Windows interface elements
+Collects program compatibility telemetry for Windows upgrades. Works alongside the Connected User Experiences and Telemetry Service. Disable to reduce telemetry and background system activity
+Updates the program compatibility database with information about installed applications. Disable to reduce telemetry collection
+Consolidates and uploads usage data as part of the Customer Experience Improvement Program. Works with the Connected User Experiences and Telemetry Service. Disable to improve privacy
+Collects USB device-related telemetry for the Customer Experience Improvement Program. Disable to reduce telemetry
+Collects disk diagnostic information and S.M.A.R.T. data for Microsoft. Disable to reduce background disk activity and telemetry
+Collects feedback and diagnostic data for Microsoft. Disable to improve privacy and reduce telemetry
+Downloads feedback scenarios and configuration data from Microsoft. Disable to reduce telemetry and network activity
+Queues crash reports and error data to send to Microsoft. Works alongside the Windows Error Reporting Service. Disable both to prevent crash data collection
+Collects software quality metrics and reliability data for Microsoft telemetry. Disable to improve privacy
+Backs up Microsoft Assisted Recovery data. Disable to reduce background system activity
+Tracks and monitors startup applications for telemetry and diagnostics. Disable to reduce telemetry
+Updates the Program Compatibility Assistant database. Works with the Program Compatibility Assistant Service. Disable both to prevent compatibility checking
+Updates offline maps data for the Windows Maps app. Disable if you don't use the Maps app to save bandwidth and storage
+Performs disk checking operations and collects diagnostic data. Consider keeping enabled for disk health monitoring
+Monitors family safety settings and usage. Disable if you don't use family safety features
+Analyzes system power consumption and collects energy efficiency data. Disable to reduce telemetry and background analysis
+Menu Iniciar limpo (sem apps fixados)
+Aplicar ajustes de usuario (HKCU) no primeiro logon
+Definir papel de parede padrao do Windows (claro/escuro)
+Reiniciar automaticamente apos aplicar os ajustes de usuario
