@@ -1,0 +1,29 @@
+Gerador de Autounattend v1.2.0 - Criado por Xerife Tech
+https://www.youtube.com/@xerifetech
+
+COMO COMPILAR NO WINDOWS
+1. Não precisa instalar nada: se o Go 1.24+ não estiver no PC, o build.bat instala
+   sozinho (pelo winget ou baixando a versão portátil de go.dev). Precisa de internet.
+2. Extraia esta pasta em qualquer lugar (ex.: Área de Trabalho).
+3. Dê dois cliques em build.bat.
+4. Os programas aparecem em dist\v1.2.0:
+     GeradorAutounattend.exe        (Windows 64 bits - o normal)
+     GeradorAutounattend_x86.exe    (Windows 32 bits)
+     GeradorAutounattend_arm64.exe  (Windows ARM)
+     SHA256SUMS.txt e HASHES-v1.2.0.txt  (publique junto com a versão)
+
+O build.bat compila os .exe, testa se abrem no seu PC e depois coloca o ícone e a aba
+Detalhes (fabricante Xerife Tech, versão) com a ferramenta tools\winres, que usa a
+própria API do Windows. Se algo der errado, ele avisa e mantém os .exe funcionando.
+
+NOVA VERSÃO
+Troque o número em main.go (const appVersion = "1.2.0") e rode o build.bat de novo.
+Se for publicar, mude também o número neste arquivo.
+
+TROCAR O ÍCONE
+Substitua o app_icon.ico (com tamanhos de 16 a 256 px) e rode o build.bat.
+Para gerar o .ico a partir de um PNG 512x512 (precisa de Python + Pillow):
+  python tools\make_dib_ico.py app_icon.png app_icon.ico
+
+Observação: a primeira compilação pode demorar um pouco e o antivírus/SmartScreen
+pode avisar sobre programas novos sem assinatura digital. Confira o hash em Sobre (botão i).

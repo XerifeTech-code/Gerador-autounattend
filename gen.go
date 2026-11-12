@@ -2,11 +2,15 @@ package main
 
 import (
 	"embed"
+	"encoding/base64"
 	"encoding/json"
+	"encoding/xml"
 	"errors"
 	"fmt"
+	"io"
 	"regexp"
 	"strings"
+	"unicode/utf16"
 )
 
 //go:embed app/catalog.json app/script.ps1 app/ext_head.txt app/ext_tail.txt app/index.html
@@ -94,9 +98,18 @@ type Options struct {
 	WritePID         bool   `json:"writePID"`
 
 	// Disco (perigoso)
-	WipeDisk bool   `json:"wipeDisk"`
-	DiskID   int    `json:"diskID"`
-	Firmware string `json:"firmware"` // uefi | bios
+	WipeDisk     bool   `json:"wipeDisk"`
+	DiskID       int    `json:"diskID"`
+	Firmware     string `json:"firmware"`     // uefi | bios
+	RecoveryPart bool   `json:"recoveryPart"` // partição de recuperação (WinRE) de 1 GB
+
+	// Drivers da pasta \Drivers do pendrive (WinPE + sistema instalado)
+	DriversUSB bool `json:"driversUSB"`
+
+	// Recursos opcionais do Windows ativados na instalação
+	FeatWSL     bool `json:"featWSL"`
+	FeatHyperV  bool `json:"featHyperV"`
+	FeatSandbox bool `json:"featSandbox"`
 
 	// Specialize
 	RunScript  bool `json:"runScript"`
@@ -124,6 +137,9 @@ type Options struct {
 	UserAdmin     bool   `json:"userAdmin"`
 	AutoLogon     bool   `json:"autoLogon"`
 	AutoLogonN    int    `json:"autoLogonCount"`
+	// senha gravada em Base64 (PlainText=false). Só esconde da leitura casual: NÃO é criptografia.
+	PasswordBase64 bool        `json:"passwordBase64"`
+	ExtraUsers     []ExtraUser `json:"extraUsers"`
 
 	// Avançado
 	FirstLogonCmds     string `json:"firstLogonCmds"`
@@ -167,6 +183,34 @@ func DefaultOptions() *Options {
 		PostApps:         BasicPostApps(),
 		Items:            map[string]bool{},
 	}
+}
+
+// usuários locais adicionais (criados junto com o usuário principal)
+type ExtraUser struct {
+	Name     string `json:"name"`
+	Display  string `json:"display"`
+	Password string `json:"password"`
+	Admin    bool   `json:"admin"`
+}
+
+// Chaves genéricas de INSTALAÇÃO publicadas pela Microsoft: escolhem a edição e
+// pulam a pergunta da chave, mas NÃO ativam o Windows.
+type Edition struct {
+	ID   string `json:"id"`
+	Name string `json:"name"`
+	Key  string `json:"key"`
+}
+
+var Editions = []Edition{
+	{"home", "Windows Home", "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99"},
+	{"home-n", "Windows Home N", "3KHY7-WNT83-DGQKR-F7HPR-844BM"},
+	{"home-sl", "Windows Home Single Language", "7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH"},
+	{"pro", "Windows Pro", "VK7JG-NPHTM-C97JM-9MPGT-3V66T"},
+	{"pro-n", "Windows Pro N", "2B87N-8KFHP-DKV6R-Y2C8J-PKCKT"},
+	{"pro-ws", "Windows Pro for Workstations", "DXG7C-N36C4-C4HTG-X4T3X-2YV77"},
+	{"pro-edu", "Windows Pro Education", "8PTT6-RNW4C-6V7J2-C2D3X-MHBPB"},
+	{"edu", "Windows Education", "YNMGQ-8RYV3-4PGQ3-C8XTP-7CFBY"},
+	{"ent", "Windows Enterprise", "XGVPP-NMH47-7TTHJ-W3FW7-8HV2C"},
 }
 
 type Locale struct {
@@ -281,12 +325,25 @@ func validate(o *Options) error {
 		if u == "" {
 			return errors.New(tr(o.Lang, "Informe o nome do usuário local"))
 		}
-		if len([]rune(u)) > 20 || strings.ContainsAny(u, `/\[]:;|=,+*?<>"@`) {
-			return errors.New(tr(o.Lang, "Nome de usuário inválido: até 20 caracteres e sem / \\ [ ] : ; | = , + * ? < > \" @"))
+		if err := checkUserName(o.Lang, u); err != nil {
+			return err
 		}
-		switch strings.ToLower(u) {
-		case "administrator", "administrador", "guest", "convidado", "defaultaccount", "system", "wdagutilityaccount":
-			return fmt.Errorf(tr(o.Lang, "O nome %q é reservado pelo Windows; escolha outro"), u)
+		seen := map[string]bool{strings.ToLower(u): true}
+		for _, x := range o.ExtraUsers {
+			n := strings.TrimSpace(x.Name)
+			if n == "" {
+				continue
+			}
+			if err := checkUserName(o.Lang, n); err != nil {
+				return err
+			}
+			if seen[strings.ToLower(n)] {
+				return fmt.Errorf(tr(o.Lang, "O usuário %q aparece mais de uma vez"), n)
+			}
+			seen[strings.ToLower(n)] = true
+		}
+		if len(o.ExtraUsers) > 20 {
+			return errors.New(tr(o.Lang, "No máximo 20 usuários adicionais"))
 		}
 		if o.AutoLogon && (o.AutoLogonN < 1 || o.AutoLogonN > 999) {
 			return errors.New(tr(o.Lang, "Quantidade de logons automáticos deve estar entre 1 e 999"))
@@ -296,6 +353,105 @@ func validate(o *Options) error {
 		return errors.New(tr(o.Lang, "Número do disco inválido"))
 	}
 	return nil
+}
+
+func checkUserName(lang, u string) error {
+	if len([]rune(u)) > 20 || strings.ContainsAny(u, `/\[]:;|=,+*?<>"@`) || strings.HasSuffix(u, ".") {
+		return errors.New(tr(lang, "Nome de usuário inválido: até 20 caracteres e sem / \\ [ ] : ; | = , + * ? < > \" @"))
+	}
+	switch strings.ToLower(u) {
+	case "administrator", "administrador", "guest", "convidado", "defaultaccount", "system", "wdagutilityaccount":
+		return fmt.Errorf(tr(lang, "O nome %q é reservado pelo Windows; escolha outro"), u)
+	}
+	return nil
+}
+
+// account é um usuário local já validado
+type account struct {
+	name, display, password string
+	admin                   bool
+}
+
+func accounts(o *Options) []account {
+	if !o.CreateUser {
+		return nil
+	}
+	name := strings.TrimSpace(o.UserName)
+	a := []account{{name, strings.TrimSpace(o.UserDisplay), o.UserPassword, o.UserAdmin}}
+	for _, x := range o.ExtraUsers {
+		n := strings.TrimSpace(x.Name)
+		if n == "" {
+			continue
+		}
+		a = append(a, account{n, strings.TrimSpace(x.Display), x.Password, x.Admin})
+	}
+	return a
+}
+
+// encodePw codifica a senha como o Windows SIM faz: Base64 de UTF-16LE(senha + sufixo)
+func encodePw(pw, suffix string) string {
+	u := utf16.Encode([]rune(pw + suffix))
+	b := make([]byte, 0, len(u)*2)
+	for _, c := range u {
+		b = append(b, byte(c), byte(c>>8))
+	}
+	return base64.StdEncoding.EncodeToString(b)
+}
+
+func writePw(b *strings.Builder, indent, pw string, enc bool) {
+	if enc {
+		fmt.Fprintf(b, "%s<Password>\n%s  <Value>%s</Value>\n%s  <PlainText>false</PlainText>\n%s</Password>\n", indent, indent, encodePw(pw, "Password"), indent, indent)
+		return
+	}
+	fmt.Fprintf(b, "%s<Password>\n%s  <Value>%s</Value>\n%s  <PlainText>true</PlainText>\n%s</Password>\n", indent, indent, esc(pw), indent, indent)
+}
+
+// profileComment guarda as escolhas (sem senhas) dentro do XML para poder reabrir o arquivo na ferramenta.
+func profileComment(o *Options) string {
+	c := *o
+	c.Lang = ""
+	c.UserPassword = ""
+	c.ExtraUsers = nil
+	for _, x := range o.ExtraUsers {
+		x.Password = ""
+		c.ExtraUsers = append(c.ExtraUsers, x)
+	}
+	c.Items = map[string]bool{}
+	for k, v := range o.Items {
+		if !v {
+			c.Items[k] = false
+		}
+	}
+	j, err := json.Marshal(&c)
+	if err != nil {
+		return ""
+	}
+	return "  <!-- " + profileMarker + base64.StdEncoding.EncodeToString(j) + " -->\n"
+}
+
+const profileMarker = "XERIFE-PROFILE:"
+
+// checkXML garante que o arquivo gerado é um XML bem formado.
+func checkXML(s string) error {
+	d := xml.NewDecoder(strings.NewReader(s))
+	for {
+		_, err := d.Token()
+		if err == io.EOF {
+			return nil
+		}
+		if err != nil {
+			return err
+		}
+	}
+}
+
+// Path de um comando RunSynchronous em PowerShell que nunca devolve erro (não trava a instalação)
+func psCmd(script string) string {
+	return esc(`powershell.exe -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "` + script + `; exit 0"`)
+}
+
+func featureCmd(feature string) string {
+	return psCmd(`dism.exe /Online /Enable-Feature /FeatureName:` + feature + ` /All /NoRestart /Quiet | Out-Null`)
 }
 
 func Generate(o *Options) (*Result, error) {
@@ -317,8 +473,11 @@ func Generate(o *Options) (*Result, error) {
 
 	W(`<?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
-  <!-- XML Generated by Winhance https://github.com/memstechtips/Winhance -->
-  <settings pass="offlineServicing"></settings>
+  <!-- Gerado pelo Gerador de Autounattend v` + appVersion + ` - Criado por Xerife Tech - https://www.youtube.com/@xerifetech -->
+  <!-- Ajustes baseados no Winhance (MIT) https://github.com/memstechtips/Winhance -->
+`)
+	W(profileComment(o))
+	W(`  <settings pass="offlineServicing"></settings>
   <settings pass="windowsPE">
 `)
 
@@ -354,6 +513,10 @@ func Generate(o *Options) (*Result, error) {
 		if len(hwc) > 0 {
 			hwc[0].desc = orderDesc(start, len(hwc), "Skip Windows 11 Hardware Requirement Checks")
 			cmds = append(cmds, hwc...)
+		}
+		if o.DriversUSB {
+			cmds = append(cmds, rsCmd{orderDesc(len(cmds)+1, 1, "Loads drivers from the Drivers folder of the installation media (Xerife Tech)"),
+				`cmd.exe /c for %d in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do @if exist "%d:\Drivers\" for /r "%d:\Drivers" %i in (*.inf) do @drvload.exe "%i"`})
 		}
 		if o.ShowEditions {
 			ed := []rsCmd{
@@ -412,6 +575,11 @@ func Generate(o *Options) (*Result, error) {
 		{o.RunScript || o.PostEnabled, rsCmd{"Loads Scripts in this XML File", `powershell.exe -NoProfile -WindowStyle Hidden -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"`}},
 		{o.BypassNRO, rsCmd{"Registry Entry to Create a Local Account during OOBE", `reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v BypassNRO /t REG_DWORD /d 1 /f`}},
 		{o.DisableNet, rsCmd{"Disable All Network Adapters Temporarily so Windows Doesn't Update During OOBE and to Allow Local Account Creation", `powershell.exe -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "Get-NetAdapter | Disable-NetAdapter -Confirm:$false"`}},
+		{o.DriversUSB, rsCmd{"Installs drivers from the Drivers folder of the installation media (Xerife Tech)", psCmd(`foreach($d in Get-PSDrive -PSProvider FileSystem){$p=Join-Path $d.Root 'Drivers';if(Test-Path $p){pnputil.exe /add-driver (Join-Path $p '*.inf') /subdirs /install | Out-Null}}`)}},
+		{o.FeatWSL, rsCmd{"Enables Windows Subsystem for Linux (Xerife Tech)", featureCmd("Microsoft-Windows-Subsystem-Linux")}},
+		{o.FeatWSL, rsCmd{"Enables Virtual Machine Platform for WSL 2 (Xerife Tech)", featureCmd("VirtualMachinePlatform")}},
+		{o.FeatHyperV, rsCmd{"Enables Hyper-V (Xerife Tech)", featureCmd("Microsoft-Hyper-V-All")}},
+		{o.FeatSandbox, rsCmd{"Enables Windows Sandbox (Xerife Tech)", featureCmd("Containers-DisposableClientVM")}},
 		{o.NetFx3, rsCmd{"Enables .NET Framework 3.5 from Windows Installation Media", `powershell.exe -NoProfile -WindowStyle Hidden -Command "foreach($d in 'C','D','E','F','G','H','I','J','K'){$src=Join-Path ($d+':') 'sources\sxs';if(Test-Path $src\*.cab){dism /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:$src;break}}"`}},
 		{o.RunScript, rsCmd{"Runs Winhance Script System Wide Operations like App Uninstalls, HKLM Registry entries etc.", `powershell.exe -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File "C:\ProgramData\Winhance\Unattend\Scripts\Winhancements.ps1"`}},
 	}
@@ -557,14 +725,31 @@ func Generate(o *Options) (*Result, error) {
 		warns = append(warns, tr(o.Lang, "O script de ajustes (Winhancements.ps1) está desligado: nenhuma remoção de apps ou ajuste de registro será aplicado."))
 	}
 
-	if o.CreateUser && o.UserPassword != "" {
+	hasPw := false
+	for _, a := range accounts(o) {
+		if a.password != "" {
+			hasPw = true
+		}
+	}
+	if hasPw && o.PasswordBase64 {
+		warns = append(warns, tr(o.Lang, "A senha fica apenas CODIFICADA (Base64) no XML, não criptografada: quem tiver o arquivo consegue ler. Não compartilhe nem publique o arquivo."))
+	} else if hasPw {
 		warns = append(warns, tr(o.Lang, "A senha do usuário fica em TEXTO PURO dentro do XML. Não compartilhe nem publique o arquivo."))
+	}
+	if !o.CreateUser {
+		warns = append(warns, tr(o.Lang, "Nenhum usuário local definido. Nas versões novas do Windows 11 (25H2 em diante) a Microsoft removeu os atalhos de conta local (BypassNRO); o jeito garantido é ligar \"Criar um usuário local\" na aba Conta e região."))
+	}
+	if o.FeatHyperV || o.FeatSandbox {
+		warns = append(warns, tr(o.Lang, "Hyper-V e Área Restrita do Windows só existem nas edições Pro, Education e Enterprise; no Home o comando é ignorado."))
 	}
 	if o.WipeDisk {
 		warns = append(warns, fmt.Sprintf(tr(o.Lang, "ATENÇÃO: a instalação vai APAGAR o disco %d sem perguntar. Use somente em máquina que pode ser formatada."), o.DiskID))
 	}
 
 	out := b.String()
+	if err := checkXML(out); err != nil {
+		return nil, fmt.Errorf(tr(o.Lang, "O XML gerado ficou inválido (%v). Revise os comandos e scripts próprios."), err)
+	}
 	st.Bytes = len(out)
 	return &Result{XML: out, Warnings: append([]string{}, dedupe(warns)...), Stats: st}, nil
 }
@@ -610,6 +795,10 @@ func findLocale(id string) *Locale {
 func writeDisk(b *strings.Builder, o *Options) {
 	fmt.Fprintf(b, "      <DiskConfiguration>\n        <Disk wcm:action=\"add\">\n          <DiskID>%d</DiskID>\n          <WillWipeDisk>true</WillWipeDisk>\n          <CreatePartitions>\n", o.DiskID)
 	var installPart int
+	if o.RecoveryPart {
+		writeDiskRecovery(b, o)
+		return
+	}
 	if o.Firmware == "bios" {
 		installPart = 2
 		b.WriteString(`            <CreatePartition wcm:action="add">
@@ -681,23 +870,126 @@ func writeDisk(b *strings.Builder, o *Options) {
 }
 
 func writeUser(b *strings.Builder, o *Options) {
-	name := strings.TrimSpace(o.UserName)
-	disp := strings.TrimSpace(o.UserDisplay)
-	if disp == "" {
-		disp = name
+	accs := accounts(o)
+	b.WriteString("      <UserAccounts>\n        <LocalAccounts>\n")
+	for _, a := range accs {
+		disp := a.display
+		if disp == "" {
+			disp = a.name
+		}
+		grp := "Users"
+		if a.admin {
+			grp = "Administrators"
+		}
+		fmt.Fprintf(b, "          <LocalAccount wcm:action=\"add\">\n            <Name>%s</Name>\n            <DisplayName>%s</DisplayName>\n            <Group>%s</Group>\n", esc(a.name), esc(disp), grp)
+		if a.password != "" {
+			writePw(b, "            ", a.password, o.PasswordBase64)
+		}
+		b.WriteString("          </LocalAccount>\n")
 	}
-	grp := "Users"
-	if o.UserAdmin {
-		grp = "Administrators"
+	b.WriteString("        </LocalAccounts>\n      </UserAccounts>\n")
+	if o.AutoLogon && len(accs) > 0 {
+		b.WriteString("      <AutoLogon>\n")
+		writePw(b, "        ", accs[0].password, o.PasswordBase64)
+		fmt.Fprintf(b, "        <Enabled>true</Enabled>\n        <LogonCount>%d</LogonCount>\n        <Username>%s</Username>\n      </AutoLogon>\n", o.AutoLogonN, esc(accs[0].name))
 	}
-	fmt.Fprintf(b, "      <UserAccounts>\n        <LocalAccounts>\n          <LocalAccount wcm:action=\"add\">\n            <Name>%s</Name>\n            <DisplayName>%s</DisplayName>\n            <Group>%s</Group>\n", esc(name), esc(disp), grp)
-	if o.UserPassword != "" {
-		fmt.Fprintf(b, "            <Password>\n              <Value>%s</Value>\n              <PlainText>true</PlainText>\n            </Password>\n", esc(o.UserPassword))
+}
+
+// writeDiskRecovery: igual ao layout padrão, com uma partição de recuperação (WinRE) de 1 GB antes do Windows
+func writeDiskRecovery(b *strings.Builder, o *Options) {
+	var installPart int
+	if o.Firmware == "bios" {
+		installPart = 3
+		b.WriteString(`            <CreatePartition wcm:action="add">
+              <Order>1</Order>
+              <Type>Primary</Type>
+              <Size>100</Size>
+            </CreatePartition>
+            <CreatePartition wcm:action="add">
+              <Order>2</Order>
+              <Type>Primary</Type>
+              <Size>1024</Size>
+            </CreatePartition>
+            <CreatePartition wcm:action="add">
+              <Order>3</Order>
+              <Type>Primary</Type>
+              <Extend>true</Extend>
+            </CreatePartition>
+          </CreatePartitions>
+          <ModifyPartitions>
+            <ModifyPartition wcm:action="add">
+              <Order>1</Order>
+              <PartitionID>1</PartitionID>
+              <Active>true</Active>
+              <Format>NTFS</Format>
+              <Label>System Reserved</Label>
+            </ModifyPartition>
+            <ModifyPartition wcm:action="add">
+              <Order>2</Order>
+              <PartitionID>2</PartitionID>
+              <Format>NTFS</Format>
+              <Label>Recovery</Label>
+              <TypeID>0x27</TypeID>
+            </ModifyPartition>
+            <ModifyPartition wcm:action="add">
+              <Order>3</Order>
+              <PartitionID>3</PartitionID>
+              <Format>NTFS</Format>
+              <Label>Windows</Label>
+            </ModifyPartition>
+          </ModifyPartitions>
+`)
+	} else {
+		installPart = 4
+		b.WriteString(`            <CreatePartition wcm:action="add">
+              <Order>1</Order>
+              <Type>EFI</Type>
+              <Size>300</Size>
+            </CreatePartition>
+            <CreatePartition wcm:action="add">
+              <Order>2</Order>
+              <Type>MSR</Type>
+              <Size>16</Size>
+            </CreatePartition>
+            <CreatePartition wcm:action="add">
+              <Order>3</Order>
+              <Type>Primary</Type>
+              <Size>1024</Size>
+            </CreatePartition>
+            <CreatePartition wcm:action="add">
+              <Order>4</Order>
+              <Type>Primary</Type>
+              <Extend>true</Extend>
+            </CreatePartition>
+          </CreatePartitions>
+          <ModifyPartitions>
+            <ModifyPartition wcm:action="add">
+              <Order>1</Order>
+              <PartitionID>1</PartitionID>
+              <Format>FAT32</Format>
+              <Label>System</Label>
+            </ModifyPartition>
+            <ModifyPartition wcm:action="add">
+              <Order>2</Order>
+              <PartitionID>2</PartitionID>
+            </ModifyPartition>
+            <ModifyPartition wcm:action="add">
+              <Order>3</Order>
+              <PartitionID>3</PartitionID>
+              <Format>NTFS</Format>
+              <Label>Recovery</Label>
+              <TypeID>DE94BBA4-06D1-4D40-A16A-BFD50179D6AC</TypeID>
+            </ModifyPartition>
+            <ModifyPartition wcm:action="add">
+              <Order>4</Order>
+              <PartitionID>4</PartitionID>
+              <Format>NTFS</Format>
+              <Label>Windows</Label>
+            </ModifyPartition>
+          </ModifyPartitions>
+`)
 	}
-	b.WriteString("          </LocalAccount>\n        </LocalAccounts>\n      </UserAccounts>\n")
-	if o.AutoLogon {
-		fmt.Fprintf(b, "      <AutoLogon>\n        <Password>\n          <Value>%s</Value>\n          <PlainText>true</PlainText>\n        </Password>\n        <Enabled>true</Enabled>\n        <LogonCount>%d</LogonCount>\n        <Username>%s</Username>\n      </AutoLogon>\n", esc(o.UserPassword), o.AutoLogonN, esc(name))
-	}
+	fmt.Fprintf(b, "        </Disk>\n      </DiskConfiguration>\n      <ImageInstall>\n        <OSImage>\n          <InstallTo>\n            <DiskID>%d</DiskID>\n            <PartitionID>%d</PartitionID>\n          </InstallTo>\n        </OSImage>\n      </ImageInstall>\n", o.DiskID, installPart)
 }
 
 // buildScript aplica as opções ao Winhancements.ps1: remove as faixas de linhas dos

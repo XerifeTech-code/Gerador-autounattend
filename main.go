@@ -17,9 +17,9 @@ import (
 	"time"
 )
 
-const appVersion = "1.1.0"
+const appVersion = "1.2.0"
 
-// canal exibido ao encerrar o programa
+// canal exibido ao encerrar o programa (só na primeira vez, por usuário e computador)
 const channelURL = "https://www.youtube.com/@xerifetech?sub_confirmation=1"
 
 func fatal(err error) {
@@ -116,6 +116,13 @@ func runGUI(noOpen bool) {
 	mux.HandleFunc("/api/save", s.api(s.handleSave))
 	mux.HandleFunc("/api/open", s.api(s.handleOpen))
 	mux.HandleFunc("/api/reveal", s.api(s.handleReveal))
+	mux.HandleFunc("/api/about", s.api(s.handleAbout))
+	mux.HandleFunc("/api/openurl", s.api(s.handleOpenURL))
+	mux.HandleFunc("/api/update", s.api(s.handleUpdate))
+	mux.HandleFunc("/api/drives", s.api(s.handleDrives))
+	mux.HandleFunc("/api/savedrive", s.api(s.handleSaveDrive))
+	mux.HandleFunc("/api/iso/start", s.api(s.handleISOStart))
+	mux.HandleFunc("/api/iso/status", s.api(s.handleISOStatus))
 	mux.HandleFunc("/api/ping", s.api(func(w http.ResponseWriter, r *http.Request) {
 		s.touch()
 		writeJSON(w, 200, map[string]bool{"ok": true})
@@ -143,7 +150,7 @@ func runGUI(noOpen bool) {
 	go s.watchdog()
 	<-s.quit
 	killWindow(cmd)
-	if !noOpen && s.seen.Load() {
+	if !noOpen && s.seen.Load() && firstChannelOpen() {
 		openURL(channelURL)
 	}
 }
@@ -222,6 +229,7 @@ func (s *server) handleInit(w http.ResponseWriter, r *http.Request) {
 		"winget":    WingetApps,
 		"locales":   Locales,
 		"timezones": TimeZones,
+		"editions":  Editions,
 		"os":        runtime.GOOS,
 		"version":   appVersion,
 	})
@@ -297,7 +305,7 @@ func (s *server) handleSave(w http.ResponseWriter, r *http.Request) {
 
 func (s *server) handleOpen(w http.ResponseWriter, r *http.Request) {
 	dir, _ := s.lastDir.Load().(string)
-	p, err := psDialog("open", "Abrir perfil de configuração", "Perfil (*.json)|*.json|Todos os arquivos (*.*)|*.*", "", dir)
+	p, err := psDialog("open", "Abrir perfil ou autounattend.xml", "Perfil ou autounattend (*.json;*.xml)|*.json;*.xml|Todos os arquivos (*.*)|*.*", "", dir)
 	if err != nil {
 		writeJSON(w, 501, map[string]string{"error": "dialog-unavailable"})
 		return
